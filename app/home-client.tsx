@@ -25,25 +25,41 @@ export default function HomeClient() {
       title: "Électricité",
       subtitle: "Installation et rénovation électrique",
       content: "Installation complète et rénovation de systèmes électriques. Mise aux normes, tableaux électriques, éclairage et prises. Intervention sécurisée et conforme aux normes.",
-      image: "/placo.png",
+      image: "/image-client/electricite.jpeg",
       gradientFrom: "#ff7e5f",
       gradientTo: "#feb47b"
-    },
-    {
-      title: "Peinture",
-      subtitle: "Peinture intérieure et extérieure",
-      content: "Travaux de peinture pour intérieur et extérieur. Préparation des surfaces, enduits, peinture décorative et finitions. Conseils couleurs et matériaux.",
-      image: "/plomberie.png",
-      gradientFrom: "#667eea",
-      gradientTo: "#764ba2"
     },
     {
       title: "Plâtrerie",
       subtitle: "Cloisons et finitions plâtre",
       content: "Pose de cloisons sèches, doublages, faux plafonds et finitions plâtrerie. Création et aménagement d'espaces avec isolation thermique et phonique.",
-      image: "/maison-work.png",
+      image: "/image-client/placo.jpeg",
+      gradientFrom: "#667eea",
+      gradientTo: "#764ba2"
+    },
+    {
+      title: "Menuiserie",
+      subtitle: "Travaux de menuiserie sur mesure",
+      content: "Fabrication et pose de menuiseries intérieures et extérieures. Portes, fenêtres, placards, aménagements sur mesure. Travail du bois de qualité.",
+      image: "/image-client/menuiserie.jpeg",
       gradientFrom: "#28a745",
       gradientTo: "#20c997"
+    },
+    {
+      title: "Cuisine & Salle de Bain",
+      subtitle: "Aménagement et rénovation",
+      content: "Conception et réalisation de cuisines et salles de bain sur mesure. Plomberie, carrelage, mobilier. Projets clés en main pour vos espaces de vie.",
+      image: "/image-client/salle de bain.jpeg",
+      gradientFrom: "#6f42c1",
+      gradientTo: "#e83e8c"
+    },
+    {
+      title: "Revêtements de Sols",
+      subtitle: "Pose et rénovation de sols",
+      content: "Installation de tous types de revêtements : carrelage, parquet, lino, moquette. Préparation des supports et finitions soignées.",
+      image: "/image-client/sol.jpeg",
+      gradientFrom: "#fd7e14",
+      gradientTo: "#ffc107"
     }
   ];
 
@@ -102,7 +118,7 @@ export default function HomeClient() {
       <TeamSection config={config.team} />
       <ContactSection 
         title="Contactez-nous"
-        subtitle="Parlons de votre projet d'électricité, peinture ou plâtrerie en Île-de-France"
+        subtitle="Parlons de votre projet d'électricité, plâtrerie, menuiserie, cuisine, salle de bain ou sols en Île-de-France"
         contactInfo={contactInfo} 
       />
 

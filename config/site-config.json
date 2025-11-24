@@ -10,11 +10,11 @@
   },
   "hero": {
     "title": "OLEGE - Entrepreneur du bâtiment en Île-de-France",
-    "subtitle": "Expert du secteur BTP spécialisé en électricité, peinture et plâtrerie. Votre entrepreneur du bâtiment de confiance pour tous vos projets de construction et rénovation en Île-de-France.",
+    "subtitle": "Expert du secteur BTP spécialisé en électricité, plâtrerie, menuiserie, cuisine, salle de bain et sols. Votre entrepreneur du bâtiment de confiance pour tous vos projets de construction et rénovation en Île-de-France.",
     "buttonText": "Demander un devis",
     "buttonHref": "#contact",
-    "backgroundImage": "",
-    "backgroundVideo": "/video.mp4"
+    "backgroundImage": "/image-client/hero.png",
+    "backgroundVideo": ""
   },
   "about": {
     "sections": [
@@ -22,8 +22,8 @@
         "smallTitle": "Notre expertise",
         "title": "Entrepreneur du bâtiment professionnel",
         "subtitle": "Expertise complète dans le secteur du BTP",
-        "content": "Notre entreprise, OLEGE, est spécialisée dans les travaux du bâtiment avec une expertise en électricité, peinture et plâtrerie. Nous mettons notre savoir-faire au service de vos projets de construction et rénovation. Notre mission : apporter un travail soigné, durable et de qualité, dans le respect des délais et des normes en Île-de-France.",
-        "image": "/maison-work.png",
+        "content": "Notre entreprise, OLEGE, est spécialisée dans les travaux du bâtiment avec une expertise en électricité, plâtrerie, menuiserie, cuisine, salle de bain et revêtements de sols. Nous mettons notre savoir-faire au service de vos projets de construction et rénovation. Notre mission : apporter un travail soigné, durable et de qualité, dans le respect des délais et des normes en Île-de-France.",
+        "image": "/image-client/chantier/huit.jpeg",
         "gradientFrom": "#ff7e5f",
         "gradientTo": "#feb47b",
         "buttonText": "Voir nos réalisations",
@@ -32,10 +32,10 @@
       },
       {
         "smallTitle": "Nos spécialités",
-        "title": "Électricité, Peinture et Plâtrerie",
+        "title": "Électricité, Plâtrerie, Menuiserie, Cuisine & SDB",
         "subtitle": "Expert multi-services du bâtiment",
-        "content": "Ce qui nous distingue, c'est notre expertise technique polyvalente, notre rigueur et notre relation de confiance avec nos clients. Chaque chantier est pour nous une nouvelle occasion de prouver que les travaux du bâtiment peuvent allier qualité et modernité. Nous maîtrisons parfaitement les normes de sécurité et de construction en vigueur dans nos trois domaines d'expertise.",
-        "image": "/plomberie.png",
+        "content": "Ce qui nous distingue, c'est notre expertise technique polyvalente, notre rigueur et notre relation de confiance avec nos clients. Chaque chantier est pour nous une nouvelle occasion de prouver que les travaux du bâtiment peuvent allier qualité et modernité. Nous maîtrisons parfaitement les normes de sécurité et de construction en vigueur dans nos cinq domaines d'expertise.",
+        "image": "/image-client/chantier/vinght-trois.jpeg",
         "gradientFrom": "#667eea",
         "gradientTo": "#764ba2",
         "buttonText": "Contactez-nous",
@@ -46,38 +46,38 @@
   },
   "gallery": {
     "title": "Nos Réalisations",
-    "subtitle": "Découvrez nos projets d'électricité, peinture et plâtrerie en Île-de-France",
+    "subtitle": "Découvrez nos projets d'électricité, plâtrerie, menuiserie, cuisine, salle de bain et sols en Île-de-France",
     "initialDisplayCount": 4,
     "images": [
       {
-        "src": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&h=800&fit=crop",
-        "alt": "Installation électrique",
-        "title": "Installation électrique - Île-de-France"
+        "src": "/image-client/chantier/lesphotos/1.jpeg",
+        "alt": "Réalisation chantier OLEGE",
+        "title": "Projet électricité - Île-de-France"
       },
       {
-        "src": "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=800&h=800&fit=crop",
-        "alt": "Travaux de peinture",
-        "title": "Peinture intérieure - Île-de-France"
+        "src": "/image-client/chantier/lesphotos/2.jpeg",
+        "alt": "Travaux de rénovation",
+        "title": "Rénovation complète - Île-de-France"
       },
       {
-        "src": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&h=800&fit=crop",
-        "alt": "Travaux de plâtrerie",
-        "title": "Plâtrerie et cloisons - Île-de-France"
+        "src": "/image-client/chantier/lesphotos/3.jpeg",
+        "alt": "Aménagement intérieur",
+        "title": "Aménagement sur mesure - Île-de-France"
       },
       {
-        "src": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&h=800&fit=crop",
-        "alt": "Rénovation complète",
-        "title": "Rénovation multi-services - Île-de-France"
+        "src": "/image-client/chantier/lesphotos/4.jpeg",
+        "alt": "Finitions de qualité",
+        "title": "Finitions soignées - Île-de-France"
       },
       {
-        "src": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=800&fit=crop",
-        "alt": "Électricité résidentielle",
-        "title": "Électricité résidentielle - Île-de-France"
+        "src": "/image-client/chantier/dix.jpeg",
+        "alt": "Chantier en cours",
+        "title": "Chantier OLEGE - Île-de-France"
       },
       {
-        "src": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&h=800&fit=crop",
-        "alt": "Peinture décorative",
-        "title": "Peinture décorative - Île-de-France"
+        "src": "/image-client/chantier/lesphotos/5.jpeg",
+        "alt": "Travaux multi-services",
+        "title": "Services complets - Île-de-France"
       }
     ]
   },
@@ -90,8 +90,8 @@
       {
         "name": "Olege",
         "position": "Fondateur & Entrepreneur du bâtiment",
-        "description": "Passionné par le secteur du BTP, je mets mon expertise en électricité, peinture et plâtrerie au service de vos projets en Île-de-France. Avec une équipe de 2 à 5 collaborateurs, nous intervenons dans un rayon de 100 km. Mon engagement : vous offrir un service de qualité, dans le respect des délais et avec un souci constant du détail.",
-        "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+        "description": "Passionné par le secteur du BTP, je mets mon expertise en électricité, plâtrerie, menuiserie, cuisine, salle de bain et revêtements de sols au service de vos projets en Île-de-France. Avec une équipe de 2 à 5 collaborateurs, nous intervenons dans un rayon de 100 km. Mon engagement : vous offrir un service de qualité, dans le respect des délais et avec un souci constant du détail.",
+        "photo": "/image-client/client.jpg"
       }
     ]
   },
