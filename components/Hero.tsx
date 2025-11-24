@@ -11,6 +11,19 @@ import { HeroConfig } from '@/lib/config';
 import { submitFormToFirebase, validateFormData, FormData } from '@/lib/firebase-service';
 import FormLoader from '@/components/FormLoader';
 
+// CSS personnalisé pour la hauteur minimale du Hero
+const heroStyles = `
+  .hero-section {
+    min-height: 100vh;
+  }
+  
+  @media (min-width: 1000px) {
+    .hero-section {
+      min-height: 1303px;
+    }
+  }
+`;
+
 interface HeroProps {
   config?: HeroConfig;
   backgroundImage?: string;
@@ -119,7 +132,9 @@ export default function Hero({
   };
 
   return (
-    <section className="relative min-h-screen md:min-h-[calc(100vh-80px)] md:h-[calc(100vh-81px)] flex items-center overflow-hidden md:py-0 py-40">
+    <>
+      <style jsx>{heroStyles}</style>
+<section className="hero-container relative min-h-[918px] md:min-h-[max(918px,calc(100vh-80px))] md:h-[max(918px,calc(100vh-81px))] flex items-center overflow-hidden py-20 md:py-0 hero-padding-responsive">
       {/* Background */}
       <div 
         className="absolute inset-0 z-0"
@@ -146,8 +161,8 @@ export default function Hero({
           {/* Left Section */}
           <motion.div
             className="text-white space-y-8"
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
 
@@ -182,8 +197,8 @@ export default function Hero({
                 <motion.li 
                   key={index}
                   className="flex items-center space-x-3"
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.8 + index * 0.1 }}
                 >
                   <div className="bg-white rounded-full p-1 flex-shrink-0">
@@ -210,8 +225,8 @@ export default function Hero({
           <motion.div
             id="contact-form"
             className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-2xl"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
             <motion.h2 
@@ -372,5 +387,6 @@ export default function Hero({
         </motion.div>
       </motion.div>
     </section>
+    </>
   );
 }

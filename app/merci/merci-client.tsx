@@ -4,8 +4,21 @@ import { motion } from 'framer-motion';
 import { Check, Home, Phone, Mail } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { useEffect } from 'react';
 
 export default function MerciClient() {
+  // Déclencher l'événement de conversion Google Ads au chargement de la page
+  useEffect(() => {
+    // Vérifier que gtag est disponible
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'conversion', {
+        'send_to': 'AW-17640952220/RfocCJeQ6a4bEJyj7ttB',
+        'value': 1.0,
+        'currency': 'EUR'
+      });
+    }
+  }, []);
+
   return (
     <div className="min-h-screen flex items-center justify-center p-4">
       <motion.div

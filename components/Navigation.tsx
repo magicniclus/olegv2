@@ -14,6 +14,35 @@ import {
   NavigationMenuList,
 } from '@/components/ui/navigation-menu';
 
+// CSS personnalisé pour le breakpoint à 1000px
+const navigationStyles = `
+  .nav-desktop {
+    display: none;
+  }
+  
+  .nav-desktop-flex {
+    display: none;
+  }
+  
+  .nav-mobile {
+    display: block;
+  }
+  
+  @media (min-width: 1000px) {
+    .nav-desktop {
+      display: block;
+    }
+    
+    .nav-desktop-flex {
+      display: flex;
+    }
+    
+    .nav-mobile {
+      display: none;
+    }
+  }
+`;
+
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [showFloatingButton, setShowFloatingButton] = useState(false);
@@ -93,14 +122,15 @@ export default function Navigation() {
 
   return (
     <>
+      <style jsx>{navigationStyles}</style>
       <nav className="bg-background/95 supports-[backdrop-filter]:bg-background/60 border-b z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
           {/* Logo à gauche */}
           <motion.div 
             className="flex-shrink-0"
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
             whileHover={{ scale: 1.02 }}
           >
@@ -122,7 +152,7 @@ export default function Navigation() {
           </motion.div>
 
           {/* Navigation au centre - Desktop */}
-          <div className="hidden md:block">
+          <div className="nav-desktop">
             <NavigationMenu>
               <NavigationMenuList className="space-x-2">
                 {navigationLinks.map((link, index) => (
@@ -182,8 +212,8 @@ export default function Navigation() {
                                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-slate-700 transition-colors duration-200"
                                   >
                                     <motion.div
-                                      initial={{ opacity: 0, x: -10 }}
-                                      animate={{ opacity: 1, x: 0 }}
+                                      initial={{ opacity: 0, y: 5 }}
+                                      animate={{ opacity: 1, y: 0 }}
                                       transition={{ duration: 0.2, delay: serviceIndex * 0.05 }}
                                     >
                                       {service.name}
@@ -211,8 +241,8 @@ export default function Navigation() {
                                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-slate-700 transition-colors duration-200"
                                   >
                                     <motion.div
-                                      initial={{ opacity: 0, x: -10 }}
-                                      animate={{ opacity: 1, x: 0 }}
+                                      initial={{ opacity: 0, y: 5 }}
+                                      animate={{ opacity: 1, y: 0 }}
                                       transition={{ duration: 0.2, delay: secteurIndex * 0.05 }}
                                     >
                                       {secteur.name}
@@ -226,8 +256,8 @@ export default function Navigation() {
                                     className="block px-4 py-2 text-sm text-slate-700 font-medium hover:bg-slate-50 hover:text-slate-800 transition-colors duration-200"
                                   >
                                     <motion.div
-                                      initial={{ opacity: 0, x: -10 }}
-                                      animate={{ opacity: 1, x: 0 }}
+                                      initial={{ opacity: 0, y: 5 }}
+                                      animate={{ opacity: 1, y: 0 }}
                                       transition={{ duration: 0.2, delay: secteursLinks.length * 0.05 }}
                                     >
                                       Tous les secteurs →
@@ -259,7 +289,7 @@ export default function Navigation() {
           </div>
 
           {/* Boutons à droite - Desktop */}
-          <div className="hidden md:flex items-center space-x-3">
+          <div className="nav-desktop-flex items-center space-x-3">
             {/* Bouton téléphone */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
@@ -308,7 +338,7 @@ export default function Navigation() {
           </div>
 
           {/* Menu mobile */}
-          <div className="md:hidden">
+          <div className="nav-mobile">
             <Button 
               variant="ghost" 
               size="icon"
@@ -330,13 +360,13 @@ export default function Navigation() {
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="fixed inset-0 z-[100] bg-background md:hidden"
-          initial={{ x: "100%" }}
-          animate={{ x: 0 }}
-          exit={{ x: "100%" }}
+          className="fixed inset-0 z-[100] bg-background nav-mobile"
+          initial={{ y: "-100%" }}
+          animate={{ y: 0 }}
+          exit={{ y: "-100%" }}
           transition={{ type: "spring", damping: 30, stiffness: 300 }}
         >
-          <div className="flex flex-col h-full">
+          <div className="flex flex-col h-full overflow-y-auto">
             {/* Header with close button */}
             <div className="flex justify-between items-center p-6 border-b">
               <div className="flex items-center space-x-2">
@@ -374,15 +404,15 @@ export default function Navigation() {
                           href={link.href}
                           className="block text-2xl font-medium text-foreground hover:text-primary transition-colors"
                           onClick={() => setIsOpen(false)}
-                          initial={{ opacity: 0, x: 50 }}
-                          animate={{ opacity: 1, x: 0 }}
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
                           transition={{ 
                             delay: 0.1 + index * 0.1,
                             type: "spring",
                             damping: 25,
                             stiffness: 300
                           }}
-                          whileHover={{ x: 10 }}
+                          whileHover={{ y: -2 }}
                         >
                           {link.name}
                         </motion.a>
@@ -392,8 +422,8 @@ export default function Navigation() {
                             {servicesLinks.map((service, serviceIndex) => (
                               <motion.div
                                 key={service.name}
-                                initial={{ opacity: 0, x: 30 }}
-                                animate={{ opacity: 1, x: 0 }}
+                                initial={{ opacity: 0, y: 10 }}
+                                animate={{ opacity: 1, y: 0 }}
                                 transition={{ 
                                   delay: 0.2 + index * 0.1 + serviceIndex * 0.05,
                                   type: "spring",
@@ -418,8 +448,8 @@ export default function Navigation() {
                             {secteursLinks.map((secteur, secteurIndex) => (
                               <motion.div
                                 key={secteur.name}
-                                initial={{ opacity: 0, x: 30 }}
-                                animate={{ opacity: 1, x: 0 }}
+                                initial={{ opacity: 0, y: 10 }}
+                                animate={{ opacity: 1, y: 0 }}
                                 transition={{ 
                                   delay: 0.2 + index * 0.1 + secteurIndex * 0.05,
                                   type: "spring",
@@ -438,8 +468,8 @@ export default function Navigation() {
                             ))}
                             {/* Lien tous les secteurs mobile */}
                             <motion.div
-                              initial={{ opacity: 0, x: 30 }}
-                              animate={{ opacity: 1, x: 0 }}
+                              initial={{ opacity: 0, y: 10 }}
+                              animate={{ opacity: 1, y: 0 }}
                               transition={{ 
                                 delay: 0.2 + index * 0.1 + secteursLinks.length * 0.05,
                                 type: "spring",
@@ -463,15 +493,15 @@ export default function Navigation() {
                         href={link.href}
                         className="block text-2xl font-medium text-foreground hover:text-primary transition-colors"
                         onClick={() => setIsOpen(false)}
-                        initial={{ opacity: 0, x: 50 }}
-                        animate={{ opacity: 1, x: 0 }}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
                         transition={{ 
                           delay: 0.1 + index * 0.1,
                           type: "spring",
                           damping: 25,
                           stiffness: 300
                         }}
-                        whileHover={{ x: 10 }}
+                        whileHover={{ y: -2 }}
                       >
                         {link.name}
                       </motion.a>
@@ -530,7 +560,7 @@ export default function Navigation() {
     <AnimatePresence>
       {showFloatingButton && (
         <motion.div
-          className="fixed bottom-4 right-4 md:hidden z-[60]"
+          className="fixed bottom-4 right-4 nav-mobile z-[60]"
           initial={{ opacity: 0, scale: 0, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0, y: 20 }}
@@ -563,7 +593,7 @@ export default function Navigation() {
     {/* Floating Call Button - Desktop (Expanded) */}
     <AnimatePresence>
       {showFloatingButton && (
-        <div className="hidden md:block fixed top-0 left-0 right-0 z-[60] pointer-events-none">
+        <div className="nav-desktop fixed top-0 left-0 right-0 z-[60] pointer-events-none">
           <div className="max-w-7xl mx-auto px-4 sm:p-6 lg:p-8 py-4 flex justify-end">
             <motion.div
               className="pointer-events-auto"
