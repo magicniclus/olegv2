@@ -45,11 +45,11 @@ export default function ContactClient() {
   };
 
   const contactInfo = {
-    address: "Zone d'intervention :\nProvence-Alpes-Côte d'Azur\nMarseille et environs\nRayon : 80 km",
-    phone: "06 59 76 49 95",
-    email: "amiltonvazmarques@gmail.com",
+    address: "Zone d'intervention :\nÎle-de-France\nParis et région parisienne\nRayon : 100 km",
+    phone: "06 05 59 88 97",
+    email: "cxfactor.fr@gmail.com",
     hours: "Lundi - Vendredi: 8h00 - 18h00\nSamedi: 8h00 - 12h00",
-    mapEmbedUrl: "https://maps.google.com/maps?q=Marseille,France&t=&z=12&ie=UTF8&iwloc=&output=embed"
+    mapEmbedUrl: "https://maps.google.com/maps?q=Ile-de-France,France&t=&z=10&ie=UTF8&iwloc=&output=embed"
   };
 
   return (
@@ -70,7 +70,7 @@ export default function ContactClient() {
               Contactez-nous
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
-              Un projet de plâtrerie, cloisons sèches, doublages ou faux plafonds ? Notre équipe est là pour vous accompagner en Provence-Alpes-Côte d'Azur.
+              Un projet d'électricité, placo peinture, menuiserie, cuisine, salle de bains ou rénovation globale ? Notre équipe OLEGE est là pour vous accompagner en Île-de-France.
             </p>
           </motion.div>
         </div>

@@ -50,14 +50,14 @@ export default function MentionsLegalesClient() {
               </div>
               
               <div className="space-y-4 text-gray-600 leading-relaxed">
-                <p><strong>Dénomination sociale :</strong> MARQUES VAZ PLACO</p>
-                <p><strong>Forme juridique :</strong> Entreprise individuelle</p>
-                <p><strong>Gérant :</strong> AMILTON VAZ</p>
-                <p><strong>Adresse du siège social :</strong> Provence-Alpes-Côte d'Azur, Marseille et environs</p>
-                <p><strong>Téléphone :</strong> 06 59 76 49 95</p>
-                <p><strong>Email :</strong> <a href="mailto:amiltonvazmarques@gmail.com" className="text-gray-600 hover:text-gray-800 transition-colors">amiltonvazmarques@gmail.com</a></p>
-                <p><strong>Activité :</strong> Travaux de plâtrerie, cloisons sèches, doublages et faux plafonds</p>
-                <p><strong>Zone d'intervention :</strong> Provence-Alpes-Côte d'Azur (rayon 80 km autour de Marseille)</p>
+                <p><strong>Raison sociale :</strong> OLEGE</p>
+                <p><strong>Forme juridique :</strong> Entrepreneur du bâtiment</p>
+                <p><strong>Gérant :</strong> OLEGE</p>
+                <p><strong>Adresse du siège social :</strong> Île-de-France</p>
+                <p><strong>Téléphone :</strong> 06 05 59 88 97</p>
+                <p><strong>Email :</strong> <a href="mailto:cxfactor.fr@gmail.com" className="text-gray-600 hover:text-gray-800 transition-colors">cxfactor.fr@gmail.com</a></p>
+                <p><strong>Activité :</strong> Travaux d'électricité, placo peinture, menuiserie, cuisine & salle de bains, rénovation globale et sols carrelage</p>
+                <p><strong>Zone d'intervention :</strong> Île-de-France (rayon 100 km)</p>
               </div>
             </div>
 
@@ -65,8 +65,8 @@ export default function MentionsLegalesClient() {
             <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Directeur de publication</h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
-                <p><strong>Directeur de publication :</strong> AMILTON VAZ</p>
-                <p><strong>Contact :</strong> <a href="mailto:amiltonvazmarques@gmail.com" className="text-gray-600 hover:text-gray-800 transition-colors">amiltonvazmarques@gmail.com</a></p>
+                <p><strong>Directeur de publication :</strong> OLEGE</p>
+                <p><strong>Contact :</strong> <a href="mailto:cxfactor.fr@gmail.com" className="text-gray-600 hover:text-gray-800 transition-colors">cxfactor.fr@gmail.com</a></p>
               </div>
             </div>
 
@@ -93,9 +93,9 @@ export default function MentionsLegalesClient() {
                   sauf autorisation expresse du directeur de la publication.
                 </p>
                 <p>
-                  Les marques et logos figurant sur le site sont déposés par MARQUES VAZ PLACO ou éventuellement par des partenaires. 
+                  Les marques et logos figurant sur le site sont déposés par OLEGE ou éventuellement par des partenaires. 
                   Toute reproduction totale ou partielle de ces marques ou de ces logos, effectuée à partir des éléments du site 
-                  sans l'autorisation expresse de MARQUES VAZ PLACO est donc prohibée.
+                  sans l'autorisation expresse d'OLEGE est donc prohibée.
                 </p>
               </div>
             </div>
@@ -105,18 +105,18 @@ export default function MentionsLegalesClient() {
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Protection des données personnelles</h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  MARQUES VAZ PLACO s'engage à respecter la réglementation en vigueur applicable au traitement des données personnelles, 
+                  OLEGE s'engage à respecter la réglementation en vigueur applicable au traitement des données personnelles, 
                   notamment la loi n° 78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés dans sa version 
                   actuelle et le Règlement Général sur la Protection des Données (RGPD).
                 </p>
                 <p>
-                  Les données personnelles collectées sur ce site sont destinées à MARQUES VAZ PLACO et ne sont jamais transmises à des tiers 
+                  Les données personnelles collectées sur ce site sont destinées à OLEGE et ne sont jamais transmises à des tiers 
                   sans votre consentement préalable.
                 </p>
                 <p>
                   Conformément à la loi "Informatique et Libertés" et au RGPD, vous disposez d'un droit d'accès, de rectification, 
                   de suppression et de portabilité de vos données personnelles. Vous pouvez exercer ces droits en nous contactant à : 
-                  <a href="mailto:amiltonvazmarques@gmail.com" className="text-gray-600 hover:text-gray-800 transition-colors"> amiltonvazmarques@gmail.com</a>
+                  <a href="mailto:cxfactor.fr@gmail.com" className="text-gray-600 hover:text-gray-800 transition-colors"> cxfactor.fr@gmail.com</a>
                 </p>
               </div>
             </div>
@@ -153,12 +153,12 @@ export default function MentionsLegalesClient() {
                 </p>
                 <p>
                   Si vous constatez une lacune, erreur ou ce qui parait être un dysfonctionnement, merci de bien vouloir le signaler par email, 
-                  à l'adresse <a href="mailto:amiltonvazmarques@gmail.com" className="text-gray-600 hover:text-gray-800 transition-colors">amiltonvazmarques@gmail.com</a>, 
+                  à l'adresse <a href="mailto:cxfactor.fr@gmail.com" className="text-gray-600 hover:text-gray-800 transition-colors">cxfactor.fr@gmail.com</a>, 
                   en décrivant le problème de la manière la plus précise possible.
                 </p>
                 <p>
                   Tout contenu téléchargé se fait aux risques et périls de l'utilisateur et sous sa seule responsabilité. 
-                  En conséquence, MARQUES VAZ PLACO ne saurait être tenu responsable d'un quelconque dommage subi par l'ordinateur de l'utilisateur 
+                  En conséquence, OLEGE ne saurait être tenu responsable d'un quelconque dommage subi par l'ordinateur de l'utilisateur 
                   ou d'une quelconque perte de données consécutives au téléchargement.
                 </p>
               </div>
@@ -190,8 +190,8 @@ export default function MentionsLegalesClient() {
                 <p>
                   Pour toute question relative aux présentes mentions légales, vous pouvez nous contacter :
                 </p>
-                <p><strong>Email :</strong> <a href="mailto:amiltonvazmarques@gmail.com" className="text-gray-600 hover:text-gray-800 transition-colors">amiltonvazmarques@gmail.com</a></p>
-                <p><strong>Téléphone :</strong> <a href="tel:0659764995" className="text-gray-600 hover:text-gray-800 transition-colors">06 59 76 49 95</a></p>
+                <p><strong>Email :</strong> <a href="mailto:cxfactor.fr@gmail.com" className="text-gray-600 hover:text-gray-800 transition-colors">cxfactor.fr@gmail.com</a></p>
+                <p><strong>Téléphone :</strong> <a href="tel:0605598897" className="text-gray-600 hover:text-gray-800 transition-colors">06 05 59 88 97</a></p>
               </div>
             </div>
           </motion.div>

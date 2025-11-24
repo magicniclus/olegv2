@@ -51,33 +51,123 @@
     "images": [
       {
         "src": "/image-client/chantier/un.jpeg",
-        "alt": "Réalisation chantier 1",
-        "title": "Réalisation chantier 1"
+        "alt": "Rénovation cuisine moderne - OLEGE",
+        "title": "Rénovation cuisine moderne - Île-de-France"
       },
       {
         "src": "/image-client/chantier/deux.jpeg",
-        "alt": "Réalisation chantier 2",
-        "title": "Réalisation chantier 2"
+        "alt": "Travaux électricité - OLEGE",
+        "title": "Installation électrique - Île-de-France"
       },
       {
         "src": "/image-client/chantier/trois.jpeg",
-        "alt": "Réalisation chantier 3",
-        "title": "Réalisation chantier 3"
+        "alt": "Placo peinture - OLEGE",
+        "title": "Cloisons et peinture - Île-de-France"
       },
       {
         "src": "/image-client/chantier/quatre.jpeg",
-        "alt": "Réalisation chantier 4",
-        "title": "Réalisation chantier 4"
+        "alt": "Menuiserie sur mesure - OLEGE",
+        "title": "Aménagement menuiserie - Île-de-France"
       },
       {
         "src": "/image-client/chantier/cinq.jpeg",
-        "alt": "Réalisation chantier 5",
-        "title": "Réalisation chantier 5"
+        "alt": "Salle de bains complète - OLEGE",
+        "title": "Rénovation salle de bains - Île-de-France"
       },
       {
         "src": "/image-client/chantier/six.jpeg",
-        "alt": "Réalisation chantier 6",
-        "title": "Réalisation chantier 6"
+        "alt": "Sols carrelage - OLEGE",
+        "title": "Pose carrelage - Île-de-France"
+      },
+      {
+        "src": "/image-client/chantier/sept.jpeg",
+        "alt": "Rénovation globale - OLEGE",
+        "title": "Rénovation complète - Île-de-France"
+      },
+      {
+        "src": "/image-client/chantier/huit.jpeg",
+        "alt": "Travaux finitions - OLEGE",
+        "title": "Finitions soignées - Île-de-France"
+      },
+      {
+        "src": "/image-client/chantier/neuf.jpeg",
+        "alt": "Aménagement intérieur - OLEGE",
+        "title": "Aménagement sur mesure - Île-de-France"
+      },
+      {
+        "src": "/image-client/chantier/dix.jpeg",
+        "alt": "Chantier en cours - OLEGE",
+        "title": "Chantier professionnel - Île-de-France"
+      },
+      {
+        "src": "/image-client/chantier/onze.jpeg",
+        "alt": "Électricité résidentielle - OLEGE",
+        "title": "Installation électrique résidentielle - Île-de-France"
+      },
+      {
+        "src": "/image-client/chantier/douze.jpeg",
+        "alt": "Peinture décorative - OLEGE",
+        "title": "Peinture intérieure - Île-de-France"
+      },
+      {
+        "src": "/image-client/chantier/treise.jpeg",
+        "alt": "Menuiserie bois - OLEGE",
+        "title": "Travaux menuiserie - Île-de-France"
+      },
+      {
+        "src": "/image-client/chantier/quatorze.jpeg",
+        "alt": "Cuisine équipée - OLEGE",
+        "title": "Cuisine sur mesure - Île-de-France"
+      },
+      {
+        "src": "/image-client/chantier/quinze.jpeg",
+        "alt": "Carrelage moderne - OLEGE",
+        "title": "Pose carrelage moderne - Île-de-France"
+      },
+      {
+        "src": "/image-client/chantier/seize.jpeg",
+        "alt": "Rénovation appartement - OLEGE",
+        "title": "Rénovation appartement - Île-de-France"
+      },
+      {
+        "src": "/image-client/chantier/dix-sept.jpeg",
+        "alt": "Travaux plomberie - OLEGE",
+        "title": "Installation plomberie - Île-de-France"
+      },
+      {
+        "src": "/image-client/chantier/dix-huit.jpeg",
+        "alt": "Finitions peinture - OLEGE",
+        "title": "Finitions peinture - Île-de-France"
+      },
+      {
+        "src": "/image-client/chantier/dix-neuf.jpeg",
+        "alt": "Aménagement cuisine - OLEGE",
+        "title": "Aménagement cuisine - Île-de-France"
+      },
+      {
+        "src": "/image-client/chantier/vinght.jpeg",
+        "alt": "Sols et revêtements - OLEGE",
+        "title": "Revêtements sols - Île-de-France"
+      },
+      {
+        "src": "/image-client/chantier/vinght-un.jpeg",
+        "alt": "Électricité moderne - OLEGE",
+        "title": "Électricité moderne - Île-de-France"
+      },
+      {
+        "src": "/image-client/chantier/vinght-deux.jpeg",
+        "alt": "Placo moderne - OLEGE",
+        "title": "Placo et cloisons - Île-de-France"
+      },
+      {
+        "src": "/image-client/chantier/vinght-trois.jpeg",
+        "alt": "Menuiserie design - OLEGE",
+        "title": "Menuiserie design - Île-de-France"
+      },
+      {
+        "src": "/image-client/chantier/vinght-quatre.jpeg",
+        "alt": "Rénovation complète - OLEGE",
+        "title": "Projet complet - Île-de-France"
       }
     ]
   },
