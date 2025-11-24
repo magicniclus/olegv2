@@ -45,11 +45,11 @@ export default function ContactClient() {
   };
 
   const contactInfo = {
-    address: "Zone d'intervention :\nÎle-de-France\nParis et région parisienne\nRayon : 100 km",
+    address: "56 RUE de la Noise\n92140 Clamart\nFRANCE",
     phone: "06 05 59 88 97",
-    email: "cxfactor.fr@gmail.com",
+    email: "exfactor.fr@gmail.com",
     hours: "Lundi - Vendredi: 8h00 - 18h00\nSamedi: 8h00 - 12h00",
-    mapEmbedUrl: "https://maps.google.com/maps?q=Ile-de-France,France&t=&z=10&ie=UTF8&iwloc=&output=embed"
+    mapEmbedUrl: "https://maps.google.com/maps?q=56+RUE+de+la+Noise+92140+Clamart&t=&z=15&ie=UTF8&iwloc=&output=embed"
   };
 
   return (
@@ -107,7 +107,7 @@ export default function ContactClient() {
                           value={formData.name}
                           onChange={handleInputChange}
                           required
-                          className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
+                          className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-slate-700 focus:border-transparent transition-all duration-200"
                           placeholder="Votre nom"
                         />
                       </div>
@@ -125,7 +125,7 @@ export default function ContactClient() {
                           name="phone"
                           value={formData.phone}
                           onChange={handleInputChange}
-                          className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
+                          className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-slate-700 focus:border-transparent transition-all duration-200"
                           placeholder="01 23 45 67 89"
                         />
                       </div>
@@ -162,7 +162,7 @@ export default function ContactClient() {
                       value={formData.subject}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-slate-700 focus:border-transparent transition-all duration-200"
                       placeholder="Objet de votre demande"
                     />
                   </div>
@@ -180,7 +180,7 @@ export default function ContactClient() {
                         onChange={handleInputChange}
                         required
                         rows={6}
-                        className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200 resize-none"
+                        className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-slate-700 focus:border-transparent transition-all duration-200 resize-none"
                         placeholder="Décrivez votre projet ou votre demande..."
                       />
                     </div>
@@ -189,7 +189,7 @@ export default function ContactClient() {
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-orange-500 hover:bg-orange-600 text-white py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 disabled:opacity-50"
+                    className="w-full bg-slate-700 hover:bg-slate-800 text-white py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 disabled:opacity-50"
                   >
                     {isSubmitting ? (
                       <div className="flex items-center justify-center space-x-2">
@@ -310,7 +310,7 @@ export default function ContactClient() {
             </p>
             <Button
               size="lg"
-              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-slate-700 hover:bg-slate-800 text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
               asChild
             >
               <a href={`tel:${contactInfo.phone.replace(/\s/g, '')}`}>

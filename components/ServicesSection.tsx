@@ -94,7 +94,7 @@ export default function ServicesSection({
                     <h3 className="text-xl font-bold text-gray-900 mb-2">
                       {card.title}
                     </h3>
-                    <h4 className="text-lg font-medium text-orange-500 mb-3">
+                    <h4 className="text-lg font-medium text-slate-700 mb-3">
                       {card.subtitle}
                     </h4>
                     <p className="text-gray-600 leading-relaxed">

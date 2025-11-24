@@ -13,6 +13,7 @@ export interface CompanyInfo {
 export interface HeroConfig {
   title: string;
   subtitle: string;
+  features?: string[];
   buttonText: string;
   buttonHref: string;
   backgroundImage?: string;

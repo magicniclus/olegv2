@@ -28,12 +28,25 @@ export default function Footer() {
     { name: 'Rénovation globale', href: '/services/renovation-globale' },
   ];
 
+  const secteursLinks = [
+    { name: 'Paris', href: '/secteur/entrepreneur-batiment-paris' },
+    { name: 'Clamart', href: '/secteur/entrepreneur-batiment-clamart' },
+    { name: 'Malakoff', href: '/secteur/entrepreneur-batiment-malakoff' },
+    { name: 'Montrouge', href: '/secteur/entrepreneur-batiment-montrouge' },
+    { name: 'Châtillon', href: '/secteur/entrepreneur-batiment-chatillon' },
+    { name: 'Vanves', href: '/secteur/entrepreneur-batiment-vanves' },
+    { name: 'Meudon', href: '/secteur/entrepreneur-batiment-meudon' },
+    { name: 'Boulogne-Billancourt', href: '/secteur/entrepreneur-batiment-boulogne-billancourt' },
+    { name: 'Sèvres', href: '/secteur/entrepreneur-batiment-sevres' },
+    { name: 'Chaville', href: '/secteur/entrepreneur-batiment-chaville' },
+  ];
+
   return (
     <footer className="bg-slate-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main footer content */}
         <div className="py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
             {/* Logo and description */}
             <motion.div 
               className="space-y-4"
@@ -56,9 +69,6 @@ export default function Footer() {
                     className="object-contain"
                   />
                 </motion.div>
-                <span className="text-xl font-bold">
-                  ExFactor
-                </span>
               </div>
               <p className="text-slate-300 text-sm leading-relaxed">
                 Entrepreneur du bâtiment en Île-de-France. Électricité, peinture et plâtrerie pour tous vos projets.
@@ -118,12 +128,43 @@ export default function Footer() {
               </ul>
             </motion.div>
 
+            {/* Secteurs links */}
+            <motion.div 
+              className="space-y-4"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <h3 className="text-lg font-semibold">Nos Secteurs</h3>
+              <ul className="space-y-2">
+                {secteursLinks.map((secteur) => (
+                  <li key={secteur.name}>
+                    <a
+                      href={secteur.href}
+                      className="text-slate-300 hover:text-white text-sm transition-colors duration-200 hover:underline"
+                    >
+                      {secteur.name}
+                    </a>
+                  </li>
+                ))}
+                <li className="pt-2 border-t border-slate-700">
+                  <a
+                    href="/secteur"
+                    className="text-slate-200 hover:text-white text-sm font-medium transition-colors duration-200 hover:underline"
+                  >
+                    Tous les secteurs →
+                  </a>
+                </li>
+              </ul>
+            </motion.div>
+
             {/* Contact info */}
             <motion.div 
               className="space-y-4"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.25 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
             >
               <h3 className="text-lg font-semibold">Contact</h3>

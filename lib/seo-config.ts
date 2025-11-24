@@ -14,32 +14,31 @@ export interface SEOConfig {
 }
 
 export const seoConfig: SEOConfig = {
-  title: "Neagu Ionut - Rénovation Intérieure & Plomberie en Île-de-France",
-  description: "Neagu Ionut, auto-entrepreneur spécialisé en rénovation intérieure, plomberie, salle de bain et carrelage. Devis gratuit en Île-de-France, Hauts-de-Seine.",
+  title: "ExFactor - Entrepreneur du Bâtiment en Île-de-France | Électricité, Placo, Menuiserie",
+  description: "ExFactor, entrepreneur du bâtiment spécialisé en électricité, placo peinture, menuiserie, cuisine & salle de bains, sols carrelage et rénovation globale. Devis gratuit en Île-de-France.",
   keywords: [
-    "rénovation intérieure Île-de-France",
-    "plomberie Hauts-de-Seine",
-    "salle de bain Suresnes",
-    "carrelage 92150",
-    "artisan rénovation Paris",
-    "plombier Suresnes",
-    "rénovation appartement",
-    "travaux salle de bain",
-    "pose carrelage",
-    "installation plomberie",
+    "entrepreneur bâtiment Île-de-France",
+    "électricité Paris",
+    "placo peinture Clamart",
+    "menuiserie 92140",
+    "rénovation cuisine salle de bain",
+    "sols carrelage",
+    "rénovation globale",
+    "travaux second œuvre",
+    "ExFactor",
     "devis gratuit",
-    "Neagu Ionut",
-    "travaux maison",
-    "rénovation BTP",
-    "auto-entrepreneur bâtiment"
+    "garantie décennale",
+    "artisan qualifié",
+    "travaux électricité",
+    "plomberie",
+    "Clamart"
   ],
-  author: "Neagu Ionut",
-  siteUrl: "https://neagu-ionut.fr",
-  siteName: "Neagu Ionut - Rénovation Intérieure",
+  author: "ExFactor",
+  siteUrl: "https://exfactor.fr",
+  siteName: "ExFactor - Entrepreneur du Bâtiment",
   locale: "fr_FR",
   type: "website",
-  image: "/og-image.jpg",
-  twitterHandle: "@adbetton"
+  image: "/og-image.jpg"
 };
 
 export function generateMetadata(
@@ -116,28 +115,29 @@ export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "@id": `${seoConfig.siteUrl}#organization`,
-  "name": "Neagu Ionut",
-  "legalName": "Neagu Ionut - Entreprise de rénovation",
+  "name": "ExFactor",
+  "legalName": "EXFACTOR",
   "url": seoConfig.siteUrl,
   "logo": `${seoConfig.siteUrl}/logo.png`,
   "image": `${seoConfig.siteUrl}/og-image.jpg`,
   "description": seoConfig.description,
   "founder": {
     "@type": "Person",
-    "name": "Neagu Ionut"
+    "name": "ROMANIUC OLEG"
   },
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": "Suresnes",
-    "postalCode": "92150",
+    "streetAddress": "56 RUE de la Noise",
+    "addressLocality": "Clamart",
+    "postalCode": "92140",
     "addressRegion": "Île-de-France",
     "addressCountry": "FR"
   },
   "contactPoint": {
     "@type": "ContactPoint",
-    "telephone": "+33758850226",
+    "telephone": "+33605598897",
     "contactType": "customer service",
-    "email": "idarenovation2022@gmail.com",
+    "email": "exfactor.fr@gmail.com",
     "availableLanguage": "French"
   },
   "areaServed": [
@@ -151,18 +151,20 @@ export const organizationSchema = {
     },
     {
       "@type": "City",
-      "name": "Suresnes"
+      "name": "Clamart"
     }
   ],
   "serviceType": [
-    "Rénovation intérieure",
-    "Plomberie", 
-    "Salle de bain",
-    "Carrelage",
-    "Travaux BTP"
+    "Électricité",
+    "Placo Peinture", 
+    "Menuiserie",
+    "Cuisine & Salle de bains",
+    "Sols Carrelage",
+    "Rénovation globale",
+    "Travaux de second œuvre"
   ],
   "priceRange": "€€",
-  "openingHours": "Mo-Fr 08:00-18:00",
+  "openingHours": "Mo-Fr 08:00-18:00, Sa 08:00-12:00",
   "sameAs": [
     `${seoConfig.siteUrl}`,
   ]
@@ -179,22 +181,54 @@ export const servicesSchema = {
   "areaServed": organizationSchema.areaServed,
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "Services de construction",
+    "name": "Services de construction et rénovation",
     "itemListElement": [
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Rénovation intérieure",
-          "description": "Rénovation complète d'appartements et maisons, cloisons, sols, peinture"
+          "name": "Électricité",
+          "description": "Installation électrique, mise aux normes, dépannage électrique"
         }
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service", 
-          "name": "Plomberie et salle de bain",
-          "description": "Installation plomberie, création salle de bain, pose carrelage"
+          "name": "Placo Peinture",
+          "description": "Travaux de plâtrerie et peinture intérieure/extérieure, cloisons sèches"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service", 
+          "name": "Menuiserie",
+          "description": "Pose de portes, fenêtres, placards sur mesure, parquet"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service", 
+          "name": "Cuisine & Salle de bains",
+          "description": "Rénovation complète de cuisines et salles de bains, plomberie, carrelage"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service", 
+          "name": "Sols Carrelage",
+          "description": "Pose de carrelage, parquet, vinyle, ragréage"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service", 
+          "name": "Rénovation Globale",
+          "description": "Rénovation complète de maisons et appartements, coordination tous corps de métier"
         }
       }
     ]

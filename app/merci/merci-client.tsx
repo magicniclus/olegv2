@@ -93,19 +93,19 @@ export default function MerciClient() {
 
           {/* Contact d'urgence */}
           <motion.div
-            className="bg-orange-50 border border-orange-200 rounded-xl p-6 mb-8"
+            className="bg-slate-50 border border-slate-200 rounded-xl p-6 mb-8"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.3 }}
           >
-            <h3 className="text-lg font-semibold text-orange-900 mb-3">Besoin urgent ?</h3>
-            <p className="text-orange-800 mb-4">
+            <h3 className="text-lg font-semibold text-slate-900 mb-3">Besoin urgent ?</h3>
+            <p className="text-slate-800 mb-4">
               Pour les demandes urgentes, n'hésitez pas à nous contacter directement :
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Button
                 variant="outline"
-                className="border-orange-300 text-orange-700 hover:bg-orange-100"
+                className="border-slate-300 text-slate-700 hover:bg-slate-100"
                 asChild
               >
                 <a href="tel:0605598897" className="flex items-center justify-center">
@@ -115,7 +115,7 @@ export default function MerciClient() {
               </Button>
               <Button
                 variant="outline"
-                className="border-orange-300 text-orange-700 hover:bg-orange-100"
+                className="border-slate-300 text-slate-700 hover:bg-slate-100"
                 asChild
               >
                 <a href="mailto:cxfactor.fr@gmail.com" className="flex items-center justify-center">
@@ -134,7 +134,7 @@ export default function MerciClient() {
             transition={{ delay: 1.5 }}
           >
             <Button
-              className="flex-1 bg-orange-500 hover:bg-orange-600 text-white"
+              className="flex-1 bg-slate-700 hover:bg-slate-800 text-white"
               asChild
             >
               <Link href="/" className="flex items-center justify-center">

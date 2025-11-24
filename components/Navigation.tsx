@@ -18,6 +18,7 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [showFloatingButton, setShowFloatingButton] = useState(false);
   const [showServicesDropdown, setShowServicesDropdown] = useState(false);
+  const [showSecteursDropdown, setShowSecteursDropdown] = useState(false);
   const pathname = usePathname();
   const phoneNumber = "06 05 59 88 97";
 
@@ -34,14 +35,30 @@ export default function Navigation() {
     { name: 'Rénovation globale', href: '/services/renovation-globale' },
   ];
 
+  // Liste des secteurs principaux pour le dropdown (10 premiers)
+  const secteursLinks = [
+    { name: 'Paris', href: '/secteur/entrepreneur-batiment-paris' },
+    { name: 'Clamart', href: '/secteur/entrepreneur-batiment-clamart' },
+    { name: 'Malakoff', href: '/secteur/entrepreneur-batiment-malakoff' },
+    { name: 'Montrouge', href: '/secteur/entrepreneur-batiment-montrouge' },
+    { name: 'Châtillon', href: '/secteur/entrepreneur-batiment-chatillon' },
+    { name: 'Vanves', href: '/secteur/entrepreneur-batiment-vanves' },
+    { name: 'Meudon', href: '/secteur/entrepreneur-batiment-meudon' },
+    { name: 'Boulogne-Billancourt', href: '/secteur/entrepreneur-batiment-boulogne-billancourt' },
+    { name: 'Sèvres', href: '/secteur/entrepreneur-batiment-sevres' },
+    { name: 'Chaville', href: '/secteur/entrepreneur-batiment-chaville' },
+  ];
+
   // Navigation adaptative selon la page
   const navigationLinks = isHomePage ? [
     { name: 'Mon expertise', href: '#expertise' },
-    { name: 'Services', href: '#services', hasDropdown: true },
+    { name: 'Services', href: '#services', hasDropdown: true, dropdownType: 'services' },
+    { name: 'Secteurs', href: '/secteur', hasDropdown: true, dropdownType: 'secteurs' },
     { name: 'Mes réalisations', href: '#realisations' },
   ] : [
     { name: 'Mon expertise', href: '/#expertise' },
-    { name: 'Services', href: '/#services', hasDropdown: true },
+    { name: 'Services', href: '/#services', hasDropdown: true, dropdownType: 'services' },
+    { name: 'Secteurs', href: '/secteur', hasDropdown: true, dropdownType: 'secteurs' },
     { name: 'Mes réalisations', href: '/#realisations' },
   ];
 
@@ -89,22 +106,18 @@ export default function Navigation() {
           >
             <Link href="/" className="flex items-center space-x-2">
               <motion.div 
-                className="w-12 h-12 flex items-center justify-center overflow-hidden"
+                className="w-16 h-16 flex items-center justify-center overflow-hidden"
                 whileHover={{ rotate: 5 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <Image 
                   src="/logo.png" 
                   alt="Logo" 
-                  width={40} 
-                  height={40} 
+                  width={60} 
+                  height={60} 
                   className="object-contain"
                 />
               </motion.div>
-              <div className="flex flex-col">
-                <span className="text-xl font-bold text-gray-900">ExFactor</span>
-                <span className="text-xs text-gray-600 font-medium">entrepreneur du bâtiment</span>
-              </div>
             </Link>
           </motion.div>
 
@@ -123,8 +136,20 @@ export default function Navigation() {
                       {link.hasDropdown ? (
                         <div
                           className="relative"
-                          onMouseEnter={() => setShowServicesDropdown(true)}
-                          onMouseLeave={() => setShowServicesDropdown(false)}
+                          onMouseEnter={() => {
+                            if (link.dropdownType === 'services') {
+                              setShowServicesDropdown(true);
+                            } else if (link.dropdownType === 'secteurs') {
+                              setShowSecteursDropdown(true);
+                            }
+                          }}
+                          onMouseLeave={() => {
+                            if (link.dropdownType === 'services') {
+                              setShowServicesDropdown(false);
+                            } else if (link.dropdownType === 'secteurs') {
+                              setShowSecteursDropdown(false);
+                            }
+                          }}
                         >
                           <NavigationMenuLink
                             href={link.href}
@@ -136,13 +161,13 @@ export default function Navigation() {
                               className="flex items-center space-x-1"
                             >
                               <span>{link.name}</span>
-                              <ChevronDown className={`h-3 w-3 transition-transform duration-200 ${showServicesDropdown ? 'rotate-180' : ''}`} />
+                              <ChevronDown className={`h-3 w-3 transition-transform duration-200 ${(link.dropdownType === 'services' && showServicesDropdown) || (link.dropdownType === 'secteurs' && showSecteursDropdown) ? 'rotate-180' : ''}`} />
                             </motion.span>
                           </NavigationMenuLink>
                           
-                          {/* Dropdown Menu */}
+                          {/* Services Dropdown Menu */}
                           <AnimatePresence>
-                            {showServicesDropdown && (
+                            {link.dropdownType === 'services' && showServicesDropdown && (
                               <motion.div
                                 initial={{ opacity: 0, y: -10 }}
                                 animate={{ opacity: 1, y: 0 }}
@@ -154,7 +179,7 @@ export default function Navigation() {
                                   <Link
                                     key={service.name}
                                     href={service.href}
-                                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-500 transition-colors duration-200"
+                                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-slate-700 transition-colors duration-200"
                                   >
                                     <motion.div
                                       initial={{ opacity: 0, x: -10 }}
@@ -165,6 +190,50 @@ export default function Navigation() {
                                     </motion.div>
                                   </Link>
                                 ))}
+                              </motion.div>
+                            )}
+                          </AnimatePresence>
+
+                          {/* Secteurs Dropdown Menu */}
+                          <AnimatePresence>
+                            {link.dropdownType === 'secteurs' && showSecteursDropdown && (
+                              <motion.div
+                                initial={{ opacity: 0, y: -10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: -10 }}
+                                transition={{ duration: 0.2 }}
+                                className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50"
+                              >
+                                {secteursLinks.map((secteur, secteurIndex) => (
+                                  <Link
+                                    key={secteur.name}
+                                    href={secteur.href}
+                                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-slate-700 transition-colors duration-200"
+                                  >
+                                    <motion.div
+                                      initial={{ opacity: 0, x: -10 }}
+                                      animate={{ opacity: 1, x: 0 }}
+                                      transition={{ duration: 0.2, delay: secteurIndex * 0.05 }}
+                                    >
+                                      {secteur.name}
+                                    </motion.div>
+                                  </Link>
+                                ))}
+                                {/* Lien vers tous les secteurs */}
+                                <div className="border-t border-gray-100 mt-2 pt-2">
+                                  <Link
+                                    href="/secteur"
+                                    className="block px-4 py-2 text-sm text-slate-700 font-medium hover:bg-slate-50 hover:text-slate-800 transition-colors duration-200"
+                                  >
+                                    <motion.div
+                                      initial={{ opacity: 0, x: -10 }}
+                                      animate={{ opacity: 1, x: 0 }}
+                                      transition={{ duration: 0.2, delay: secteursLinks.length * 0.05 }}
+                                    >
+                                      Tous les secteurs →
+                                    </motion.div>
+                                  </Link>
+                                </div>
                               </motion.div>
                             )}
                           </AnimatePresence>
@@ -223,7 +292,7 @@ export default function Navigation() {
             >
               <Button 
                 size="lg"
-                className="bg-orange-500 hover:bg-orange-600 text-white shadow-lg hover:shadow-xl transition-all duration-300"
+                className="bg-slate-700 hover:bg-slate-800 text-white shadow-lg hover:shadow-xl transition-all duration-300"
                 asChild
               >
                 <motion.a
@@ -284,14 +353,6 @@ export default function Navigation() {
                     className="object-contain"
                   />
                 </motion.div>
-                <div className="flex flex-col">
-                  <span className="text-xl font-bold text-foreground">
-                    ExFactor
-                  </span>
-                  <span className="text-xs text-gray-400 font-medium">
-                    entrepreneur du bâtiment
-                  </span>
-                </div>
               </div>
               <Button 
                 variant="ghost" 
@@ -326,29 +387,76 @@ export default function Navigation() {
                           {link.name}
                         </motion.a>
                         {/* Services submenu mobile */}
-                        <div className="ml-4 mt-3 space-y-3">
-                          {servicesLinks.map((service, serviceIndex) => (
+                        {link.dropdownType === 'services' && (
+                          <div className="ml-4 mt-3 space-y-3">
+                            {servicesLinks.map((service, serviceIndex) => (
+                              <motion.div
+                                key={service.name}
+                                initial={{ opacity: 0, x: 30 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ 
+                                  delay: 0.2 + index * 0.1 + serviceIndex * 0.05,
+                                  type: "spring",
+                                  damping: 25,
+                                  stiffness: 300
+                                }}
+                              >
+                                <Link
+                                  href={service.href}
+                                  className="block text-lg text-gray-600 hover:text-slate-700 transition-colors"
+                                  onClick={() => setIsOpen(false)}
+                                >
+                                  {service.name}
+                                </Link>
+                              </motion.div>
+                            ))}
+                          </div>
+                        )}
+                        {/* Secteurs submenu mobile */}
+                        {link.dropdownType === 'secteurs' && (
+                          <div className="ml-4 mt-3 space-y-3">
+                            {secteursLinks.map((secteur, secteurIndex) => (
+                              <motion.div
+                                key={secteur.name}
+                                initial={{ opacity: 0, x: 30 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ 
+                                  delay: 0.2 + index * 0.1 + secteurIndex * 0.05,
+                                  type: "spring",
+                                  damping: 25,
+                                  stiffness: 300
+                                }}
+                              >
+                                <Link
+                                  href={secteur.href}
+                                  className="block text-lg text-gray-600 hover:text-slate-700 transition-colors"
+                                  onClick={() => setIsOpen(false)}
+                                >
+                                  {secteur.name}
+                                </Link>
+                              </motion.div>
+                            ))}
+                            {/* Lien tous les secteurs mobile */}
                             <motion.div
-                              key={service.name}
                               initial={{ opacity: 0, x: 30 }}
                               animate={{ opacity: 1, x: 0 }}
                               transition={{ 
-                                delay: 0.2 + index * 0.1 + serviceIndex * 0.05,
+                                delay: 0.2 + index * 0.1 + secteursLinks.length * 0.05,
                                 type: "spring",
                                 damping: 25,
                                 stiffness: 300
                               }}
                             >
                               <Link
-                                href={service.href}
-                                className="block text-lg text-gray-600 hover:text-orange-500 transition-colors"
+                                href="/secteur"
+                                className="block text-lg font-medium text-slate-700 hover:text-slate-800 transition-colors"
                                 onClick={() => setIsOpen(false)}
                               >
-                                {service.name}
+                                Tous les secteurs →
                               </Link>
                             </motion.div>
-                          ))}
-                        </div>
+                          </div>
+                        )}
                       </div>
                     ) : (
                       <motion.a
@@ -405,7 +513,7 @@ export default function Navigation() {
                 transition={{ delay: 0.5 }}
               >
                 <Button 
-                  className="w-full h-14 text-lg bg-orange-500 hover:bg-orange-600 text-white" 
+                  className="w-full h-14 text-lg bg-slate-700 hover:bg-slate-800 text-white" 
                   size="lg"
                   onClick={() => setIsOpen(false)}
                 >
@@ -476,7 +584,7 @@ export default function Navigation() {
                 transition={{ type: "spring", stiffness: 400 }}
                 className="bg-white hover:bg-gray-50 shadow-xl hover:shadow-2xl rounded-2xl px-6 py-4 transition-all duration-300 flex items-center space-x-4 border border-gray-200"
               >
-                <div className="bg-orange-500 rounded-full p-3 shadow-lg">
+                <div className="bg-slate-700 rounded-full p-3 shadow-lg">
                   <Phone className="h-6 w-6 text-white" />
                 </div>
                 <div className="flex flex-col items-start">

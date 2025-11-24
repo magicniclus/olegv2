@@ -29,11 +29,11 @@ export default function FormLoader({ isVisible, stage }: FormLoaderProps) {
             <div className="mb-6">
               {stage === 'sending' && (
                 <motion.div
-                  className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto"
+                  className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto"
                   animate={{ rotate: 360 }}
                   transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
                 >
-                  <Send className="h-8 w-8 text-orange-500" />
+                  <Send className="h-8 w-8 text-slate-700" />
                 </motion.div>
               )}
               
@@ -82,7 +82,7 @@ export default function FormLoader({ isVisible, stage }: FormLoaderProps) {
                 transition={{ delay: 0.4 }}
               >
                 <motion.div
-                  className="bg-gradient-to-r from-orange-500 to-orange-600 h-2 rounded-full"
+                  className="bg-gradient-to-r from-slate-700 to-slate-800 h-2 rounded-full"
                   initial={{ width: "0%" }}
                   animate={{ width: "100%" }}
                   transition={{ duration: 2, ease: "easeInOut" }}

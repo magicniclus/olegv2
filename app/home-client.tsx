@@ -78,10 +78,10 @@ export default function HomeClient() {
   ];
 
   const contactInfo = {
-    address: "Île-de-France\nIntervention dans toute la région\nRayon d'intervention : 100 km",
+    address: "56 RUE de la Noise\n92140 Clamart\nFRANCE\nZone d'intervention : Île-de-France",
     phone: "06 05 59 88 97",
-    email: "cxfactor.fr@gmail.com",
-    mapEmbedUrl: "https://maps.google.com/maps?q=Ile-de-France,France&t=&z=10&ie=UTF8&iwloc=&output=embed"
+    email: "exfactor.fr@gmail.com",
+    mapEmbedUrl: "https://maps.google.com/maps?q=56+RUE+de+la+Noise+92140+Clamart&t=&z=15&ie=UTF8&iwloc=&output=embed"
   };
 
   return (

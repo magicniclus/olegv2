@@ -52,10 +52,11 @@ export default function CGVClient() {
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
                   Les présentes Conditions Générales de Vente (CGV) régissent les relations contractuelles entre 
-                  {config.company.legalName}, société par actions simplifiée au capital de 50 000 €, immatriculée au RCS de Paris 
-                  sous le numéro B {config.company.siret}, dont le siège social est situé {config.company.address}, 
+                  {config.company.legalName}, {config.company.formeJuridique} au capital de {config.company.capital}, 
+                  immatriculée au RCS sous le numéro SIREN {config.company.siren}, 
+                  dont le siège social est situé {config.company.address}, 
                   ci-après dénommée « {config.company.name} » ou « la Société », et toute personne physique ou morale, 
-                  ci-après dénommée « le Client », souhaitant bénéficier des services proposés par TrouverMonChantier.
+                  ci-après dénommée « le Client », souhaitant bénéficier des services proposés par {config.company.name}.
                 </p>
                 <p>
                   L'acceptation des présentes CGV est matérialisée par la validation de toute commande ou demande de service. 
@@ -69,16 +70,21 @@ export default function CGVClient() {
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Article 1 - Objet</h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  {config.company.name} est une plateforme de mise en relation entre particuliers et professionnels du bâtiment. 
+                  {config.company.name} est une entreprise spécialisée dans les travaux de second œuvre du bâtiment. 
                   La Société propose les services suivants :
                 </p>
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Mise en relation avec des artisans et entrepreneurs qualifiés</li>
-                  <li>Établissement de devis gratuits</li>
-                  <li>Suivi de projets de construction et rénovation</li>
-                  <li>Conseil et accompagnement personnalisé</li>
-                  <li>Garanties sur les travaux réalisés</li>
+                  <li>Travaux d'électricité et mise aux normes</li>
+                  <li>Placo peinture et cloisons sèches</li>
+                  <li>Menuiserie et aménagements sur mesure</li>
+                  <li>Rénovation de cuisines et salles de bains</li>
+                  <li>Pose de sols et carrelage</li>
+                  <li>Rénovation globale d'habitations</li>
+                  <li>Travaux de plomberie</li>
                 </ul>
+                <p className="mt-4">
+                  <strong>Activité principale :</strong> {config.company.activitePrincipale}
+                </p>
               </div>
             </div>
 

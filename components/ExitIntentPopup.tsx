@@ -111,7 +111,7 @@ export default function ExitIntentPopup({ onClose }: ExitIntentPopupProps) {
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
-        <div className="relative bg-gradient-to-r from-orange-500 to-orange-600 text-white p-6 rounded-t-2xl">
+        <div className="relative bg-gradient-to-r from-slate-700 to-slate-800 text-white p-6 rounded-t-2xl">
           <button
             onClick={onClose}
             className="absolute top-4 right-4 text-white/80 hover:text-white transition-colors"
@@ -125,7 +125,7 @@ export default function ExitIntentPopup({ onClose }: ExitIntentPopupProps) {
             </div>
             <div>
               <h2 className="text-2xl font-bold">Ne partez pas !</h2>
-              <p className="text-orange-100">Obtenez votre devis gratuit maintenant</p>
+              <p className="text-slate-100">Obtenez votre devis gratuit maintenant</p>
             </div>
           </div>
         </div>
@@ -155,7 +155,7 @@ export default function ExitIntentPopup({ onClose }: ExitIntentPopupProps) {
                   value={formData.name}
                   onChange={handleInputChange}
                   required
-                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200 text-sm"
+                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-slate-700 focus:border-transparent transition-all duration-200 text-sm"
                   placeholder="Votre nom"
                 />
               </div>
@@ -174,7 +174,7 @@ export default function ExitIntentPopup({ onClose }: ExitIntentPopupProps) {
                   value={formData.email}
                   onChange={handleInputChange}
                   required
-                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200 text-sm"
+                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-slate-700 focus:border-transparent transition-all duration-200 text-sm"
                   placeholder="votre@email.com"
                 />
               </div>
@@ -192,7 +192,7 @@ export default function ExitIntentPopup({ onClose }: ExitIntentPopupProps) {
                   name="phone"
                   value={formData.phone}
                   onChange={handleInputChange}
-                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200 text-sm"
+                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-slate-700 focus:border-transparent transition-all duration-200 text-sm"
                   placeholder="01 23 45 67 89"
                 />
               </div>
@@ -210,7 +210,7 @@ export default function ExitIntentPopup({ onClose }: ExitIntentPopupProps) {
                   value={formData.message}
                   onChange={handleInputChange}
                   rows={3}
-                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200 resize-none text-sm"
+                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-slate-700 focus:border-transparent transition-all duration-200 resize-none text-sm"
                   placeholder="Type de travaux, surface, délais..."
                 />
               </div>
@@ -219,7 +219,7 @@ export default function ExitIntentPopup({ onClose }: ExitIntentPopupProps) {
             <Button
               type="submit"
               disabled={isSubmitting || !formData.name || !formData.email}
-              className="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 disabled:opacity-50"
+              className="w-full bg-slate-700 hover:bg-slate-800 text-white py-3 text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 disabled:opacity-50"
             >
               <div className="flex items-center justify-center space-x-2">
                 <Calendar className="h-4 w-4" />

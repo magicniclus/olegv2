@@ -37,6 +37,7 @@ export default function Hero({
   // Use config values if provided, otherwise fall back to props or defaults
   const heroTitle = config?.title || title;
   const heroSubtitle = config?.subtitle || description;
+  const heroFeatures = config?.features || bulletPoints;
   // const heroButtonText = config?.buttonText || "Demander un devis";
   // const heroButtonHref = config?.buttonHref || "#contact";
   const heroBackgroundImage = config?.backgroundImage || backgroundImage;
@@ -177,7 +178,7 @@ export default function Hero({
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              {bulletPoints.map((point, index) => (
+              {heroFeatures.map((point, index) => (
                 <motion.li 
                   key={index}
                   className="flex items-center space-x-3"
@@ -185,8 +186,8 @@ export default function Hero({
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.6, delay: 0.8 + index * 0.1 }}
                 >
-                  <div className="bg-orange-500 rounded-full p-1 flex-shrink-0">
-                    <Check className="h-4 w-4 text-white" />
+                  <div className="bg-white rounded-full p-1 flex-shrink-0">
+                    <Check className="h-4 w-4 text-slate-700" />
                   </div>
                   <span className="text-lg text-gray-100">{point}</span>
                 </motion.li>
@@ -235,7 +236,7 @@ export default function Hero({
                     name="nom"
                     value={formData.nom}
                     onChange={handleInputChange}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-700 focus:border-transparent"
                     required
                   />
                 </div>
@@ -249,7 +250,7 @@ export default function Hero({
                     name="prenom"
                     value={formData.prenom}
                     onChange={handleInputChange}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-700 focus:border-transparent"
                     required
                   />
                 </div>
@@ -312,7 +313,7 @@ export default function Hero({
                   name="rgpd"
                   checked={formData.rgpd}
                   onChange={handleInputChange}
-                  className="mt-1 h-4 w-4 text-orange-500 focus:ring-orange-500 border-gray-300 rounded"
+                  className="mt-1 h-4 w-4 text-slate-700 focus:ring-slate-700 border-gray-300 rounded"
                   required
                 />
                 <label htmlFor="rgpd" className="text-sm text-gray-600">
@@ -326,7 +327,7 @@ export default function Hero({
                 disabled={!isFormValid() || isSubmitting}
                 className={`w-full py-3 text-white font-semibold rounded-lg transition-all duration-300 ${
                   isFormValid() && !isSubmitting
-                    ? 'bg-orange-500 hover:bg-orange-600 shadow-lg hover:shadow-xl'
+                    ? 'bg-slate-700 hover:bg-slate-800 shadow-lg hover:shadow-xl'
                     : 'bg-gray-300 cursor-not-allowed'
                 }`}
               >

@@ -90,7 +90,7 @@ export default function AboutSection({
             {/* Small title with orange line */}
             <div className="flex items-center space-x-4">
               <motion.span
-                className="text-orange-500 font-semibold text-sm uppercase tracking-wider"
+                className="text-slate-700 font-semibold text-sm uppercase tracking-wider"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -98,13 +98,7 @@ export default function AboutSection({
               >
                 {smallTitle}
               </motion.span>
-              <motion.div
-                className="w-[150px] h-1 bg-orange-500 rounded-full"
-                initial={{ width: 0 }}
-                whileInView={{ width: 150 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-              />
+              <div className="w-16 h-1 bg-slate-700 rounded-full"></div>
             </div>
 
             {/* Main title */}
@@ -120,7 +114,7 @@ export default function AboutSection({
 
             {/* Subtitle */}
             <motion.h3
-              className="text-xl md:text-2xl font-medium text-orange-500"
+              className="text-xl md:text-2xl font-medium text-slate-700"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -150,7 +144,7 @@ export default function AboutSection({
               >
                 <Button
                   size="lg"
-                  className="bg-orange-500 hover:bg-orange-600 text-white shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="bg-slate-700 hover:bg-slate-800 text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
                   onClick={() => {
                     const contactForm = document.getElementById('contact-form');
                     if (contactForm) {

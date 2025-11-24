@@ -1,16 +1,31 @@
 {
   "company": {
     "name": "ExFactor",
-    "legalName": "ExFactor - Entrepreneur du bâtiment",
-    "address": "Île-de-France",
+    "legalName": "EXFACTOR",
+    "address": "56 RUE de la Noise 92140 Clamart FRANCE",
     "phone": "06 05 59 88 97",
-    "email": "cxfactor.fr@gmail.com",
-    "siret": "Entrepreneur du bâtiment",
-    "ceo": "ExFactor"
+    "email": "exfactor.fr@gmail.com",
+    "siren": "948 694 757",
+    "siret": "948 694 757",
+    "capital": "1000 EUR",
+    "formeJuridique": "Société à responsabilité limitée à associé unique (SARLU ou EURL)",
+    "codeAPE": "41.20B - Construction d'autres bâtiments",
+    "codeAPRM": "41.20B.8 - Réhabilitation de bâtiments",
+    "dateCreation": "19/01/2023",
+    "natureActivite": "Artisanale réglementée",
+    "activitePrincipale": "Travaux de second œuvre dans le bâtiment, rénovation immobilière de tout type d'habitat, rénovation des murs, sols, plafonds ainsi que travaux d'électricité et de plomberie",
+    "ceo": "ROMANIUC OLEG",
+    "ceoQualite": "Gérant",
+    "ceoNaissance": "09/1991"
   },
   "hero": {
-    "title": "ExFactor - Entrepreneur du bâtiment en Île-de-France",
-    "subtitle": "Expert du secteur BTP spécialisé en électricité, placo peinture, menuiserie, cuisine & salle de bains, rénovation globale et sols carrelage. Votre entrepreneur du bâtiment de confiance pour tous vos projets en Île-de-France.",
+    "title": "ExFactor : Rénovation haut de gamme de votre bien en Île-de-France",
+    "subtitle": "Artisan qualifié pour tous vos travaux de rénovation",
+    "features": [
+      "Équipe de 3 collaborateurs qualifiés",
+      "Garantie décennale sur tous nos travaux", 
+      "Intervention dans un rayon de 100km"
+    ],
     "buttonText": "Demander un devis",
     "buttonHref": "#contact",
     "backgroundImage": "/image-client/hero.png",
@@ -188,24 +203,24 @@
   "partners": {
     "logos": [
       {
-        "src": "/logo/SMA_BTP.png",
-        "alt": "SMA BTP",
+        "src": "/image-client/icon/SMA_BTP.png",
+        "alt": "SMA BTP - Syndicat des Métiers de l'Artisanat",
         "name": "SMA BTP"
       },
       {
-        "src": "/logo/decennale.png",
-        "alt": "Assurance Décennale",
+        "src": "/image-client/icon/decennale.png",
+        "alt": "Assurance Décennale - Garantie 10 ans",
         "name": "Garantie Décennale"
       },
       {
-        "src": "/logo/tmc-partenaire.png",
-        "alt": "TMC Partenaire",
-        "name": "TMC"
+        "src": "/image-client/icon/qonto.png",
+        "alt": "Qonto - Banque professionnelle",
+        "name": "Qonto"
       },
       {
-        "src": "/rge.png",
-        "alt": "RGE Qualifié",
-        "name": "RGE"
+        "src": "/image-client/icon/tmc-partenaire.png",
+        "alt": "TMC Partenaire - Trouver Mon Chantier",
+        "name": "TMC"
       }
     ]
   },

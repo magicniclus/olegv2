@@ -139,7 +139,7 @@ export default function ProjectGallery({
             >
               <Button
                 size="lg"
-                className="bg-orange-500 hover:bg-orange-600 text-white shadow-lg hover:shadow-xl transition-all duration-300"
+                className="bg-slate-700 hover:bg-slate-800 text-white shadow-lg hover:shadow-xl transition-all duration-300"
                 onClick={showMoreImages}
               >
                 Voir plus de réalisations ({galleryImages.length - displayCount} restantes)

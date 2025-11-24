@@ -50,14 +50,18 @@ export default function MentionsLegalesClient() {
               </div>
               
               <div className="space-y-4 text-gray-600 leading-relaxed">
-                <p><strong>Raison sociale :</strong> ExFactor</p>
-                <p><strong>Forme juridique :</strong> Entrepreneur du bâtiment</p>
-                <p><strong>Gérant :</strong> ExFactor</p>
-                <p><strong>Adresse du siège social :</strong> Île-de-France</p>
-                <p><strong>Téléphone :</strong> 06 05 59 88 97</p>
-                <p><strong>Email :</strong> <a href="mailto:cxfactor.fr@gmail.com" className="text-gray-600 hover:text-gray-800 transition-colors">cxfactor.fr@gmail.com</a></p>
-                <p><strong>Activité :</strong> Travaux d'électricité, placo peinture, menuiserie, cuisine & salle de bains, rénovation globale et sols carrelage</p>
-                <p><strong>Zone d'intervention :</strong> Île-de-France (rayon 100 km)</p>
+                <p><strong>Dénomination :</strong> {config.company.legalName}</p>
+                <p><strong>Forme juridique :</strong> {config.company.formeJuridique}</p>
+                <p><strong>SIREN :</strong> {config.company.siren}</p>
+                <p><strong>Capital social :</strong> {config.company.capital}</p>
+                <p><strong>Code APE :</strong> {config.company.codeAPE}</p>
+                <p><strong>Code APRM :</strong> {config.company.codeAPRM}</p>
+                <p><strong>Date de début d'activité :</strong> {config.company.dateCreation}</p>
+                <p><strong>Nature de l'activité :</strong> {config.company.natureActivite}</p>
+                <p><strong>Siège social :</strong> {config.company.address}</p>
+                <p><strong>Téléphone :</strong> {config.company.phone}</p>
+                <p><strong>Email :</strong> <a href={`mailto:${config.company.email}`} className="text-gray-600 hover:text-gray-800 transition-colors">{config.company.email}</a></p>
+                <p><strong>Activité principale :</strong> {config.company.activitePrincipale}</p>
               </div>
             </div>
 
@@ -65,8 +69,10 @@ export default function MentionsLegalesClient() {
             <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Directeur de publication</h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
-                <p><strong>Directeur de publication :</strong> ExFactor</p>
-                <p><strong>Contact :</strong> <a href="mailto:cxfactor.fr@gmail.com" className="text-gray-600 hover:text-gray-800 transition-colors">cxfactor.fr@gmail.com</a></p>
+                <p><strong>Nom :</strong> {config.company.ceo}</p>
+                <p><strong>Qualité :</strong> {config.company.ceoQualite}</p>
+                <p><strong>Date de naissance :</strong> {config.company.ceoNaissance}</p>
+                <p><strong>Contact :</strong> <a href={`mailto:${config.company.email}`} className="text-gray-600 hover:text-gray-800 transition-colors">{config.company.email}</a></p>
               </div>
             </div>
 
