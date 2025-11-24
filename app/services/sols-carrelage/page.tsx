@@ -3,22 +3,22 @@ import ServicePage from '@/components/ServicePage';
 
 // Métadonnées SEO pour la page sols carrelage
 export const metadata: Metadata = {
-  title: "Sols Carrelage - OLEGE | Devis Gratuit Carreleur Île-de-France",
-  description: "Expert carreleur en Île-de-France. OLEGE réalise vos sols carrelage, parquet, vinyle et ragréage. Devis gratuit et personnalisé. Pose professionnelle garantie.",
-  keywords: "carreleur Île-de-France, pose carrelage, sols parquet, ragréage, OLEGE, devis gratuit carrelage, artisan carreleur, revêtements sols",
-  authors: [{ name: "OLEGE" }],
-  creator: "OLEGE",
-  publisher: "OLEGE",
+  title: "Sols Carrelage - ExFactor | Devis Gratuit Carreleur Île-de-France",
+  description: "Expert carreleur en Île-de-France. ExFactor réalise vos sols carrelage, parquet, vinyle et ragréage. Devis gratuit et personnalisé. Pose professionnelle garantie.",
+  keywords: "carreleur Île-de-France, pose carrelage, sols parquet, ragréage, ExFactor, devis gratuit carrelage, artisan carreleur, revêtements sols",
+  authors: [{ name: "ExFactor" }],
+  creator: "ExFactor",
+  publisher: "ExFactor",
   openGraph: {
-    title: "Sols Carrelage OLEGE - Devis Gratuit Carreleur Île-de-France",
+    title: "Sols Carrelage ExFactor - Devis Gratuit Carreleur Île-de-France",
     description: "Expert carreleur pour tous vos revêtements de sols. Devis gratuit et personnalisé en Île-de-France.",
     type: "website",
     locale: "fr_FR",
-    siteName: "OLEGE - Entrepreneur du bâtiment",
+    siteName: "ExFactor - Entrepreneur du bâtiment",
   },
   twitter: {
     card: "summary",
-    title: "Sols Carrelage OLEGE - Devis Gratuit",
+    title: "Sols Carrelage ExFactor - Devis Gratuit",
     description: "Expert carreleur en Île-de-France. Devis gratuit.",
   },
   robots: {
@@ -91,16 +91,16 @@ export default function SolsCarrelagePage() {
 
   return (
     <ServicePage
-      title="Sols Carrelage - OLEGE | Devis Gratuit Carreleur Île-de-France"
-      description="Expert carreleur en Île-de-France. OLEGE réalise vos sols carrelage, parquet, vinyle et ragréage. Devis gratuit et personnalisé."
+      title="Sols Carrelage - ExFactor | Devis Gratuit Carreleur Île-de-France"
+      description="Expert carreleur en Île-de-France. ExFactor réalise vos sols carrelage, parquet, vinyle et ragréage. Devis gratuit et personnalisé."
       keywords={["carreleur Île-de-France", "pose carrelage", "sols parquet", "ragréage", "devis gratuit carrelage", "artisan carreleur"]}
       serviceName="Sols Carrelage"
       heroImage="/image-client/sol.jpeg"
       heroTitle="Sols Carrelage en Île-de-France"
-      heroSubtitle="Revêtements et finitions avec OLEGE"
+      heroSubtitle="Revêtements et finitions avec ExFactor"
       sector="Île-de-France"
       location="Paris et région parisienne"
-      mainDescription="OLEGE, expert en revêtements de sols en Île-de-France, vous accompagne dans tous vos projets de carrelage et sols. Notre équipe de 3 collaborateurs qualifiés maîtrise toutes les techniques de pose pour vous offrir des finitions parfaites et durables avec garantie décennale."
+      mainDescription="ExFactor, expert en revêtements de sols en Île-de-France, vous accompagne dans tous vos projets de carrelage et sols. Notre équipe de 3 collaborateurs qualifiés maîtrise toutes les techniques de pose pour vous offrir des finitions parfaites et durables avec garantie décennale."
       subServices={subServices}
       advantages={advantages}
       serviceArea={serviceArea}

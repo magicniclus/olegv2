@@ -3,35 +3,35 @@ import HomeClient from './home-client';
 
 // Métadonnées SEO pour la page d'accueil
 export const metadata: Metadata = {
-  title: "OLEGE - Entrepreneur du bâtiment en Île-de-France | Électricité, Peinture, Plâtrerie",
-  description: "Entrepreneur du bâtiment en Île-de-France spécialisé en électricité, peinture et plâtrerie. OLEGE vous accompagne dans tous vos projets de construction et rénovation. Devis gratuit et intervention rapide.",
-  keywords: "électricien Île-de-France, peintre bâtiment, plâtrier, OLEGE, entrepreneur bâtiment, rénovation Île-de-France, devis gratuit, artisan qualifié, travaux électricité, BTP Île-de-France",
-  authors: [{ name: "OLEGE" }],
-  creator: "OLEGE",
-  publisher: "OLEGE",
+  title: "ExFactor - Entrepreneur du bâtiment en Île-de-France | Devis Gratuit, Peinture, Plâtrerie",
+  description: "Expert entrepreneur du bâtiment en Île-de-France. ExFactor spécialisé en électricité, placo peinture, menuiserie, cuisine & salle de bains, rénovation globale et sols carrelage. Devis gratuit et intervention rapide.",
+  keywords: "électricien Île-de-France, peintre bâtiment, plâtrier, entrepreneur bâtiment Île-de-France, électricité, placo peinture, menuiserie, ExFactor, devis gratuit, artisan qualifié, travaux bâtiment, BTP Île-de-France",
+  authors: [{ name: "ExFactor" }],
+  creator: "ExFactor",
+  publisher: "ExFactor",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
   openGraph: {
-    title: "OLEGE - Entrepreneur du bâtiment en Île-de-France",
+    title: "ExFactor - Expert Entrepreneur du bâtiment en Île-de-France",
     description: "Spécialiste électricité, peinture et plâtrerie. Intervention rapide en Île-de-France. Devis gratuit et personnalisé.",
     type: "website",
     locale: "fr_FR",
-    siteName: "OLEGE - Entrepreneur du bâtiment",
+    siteName: "ExFactor - Entrepreneur du bâtiment",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "OLEGE - Entrepreneur du bâtiment en Île-de-France",
+        alt: "ExFactor - Entrepreneur du bâtiment en Île-de-France",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "OLEGE - Entrepreneur du bâtiment",
+    title: "ExFactor - Expert Entrepreneur du bâtiment",
     description: "Spécialiste électricité, peinture et plâtrerie en Île-de-France. Devis gratuit.",
     images: ["/og-image.jpg"],
   },

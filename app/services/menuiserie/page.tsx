@@ -3,22 +3,22 @@ import ServicePage from '@/components/ServicePage';
 
 // Métadonnées SEO pour la page menuiserie
 export const metadata: Metadata = {
-  title: "Menuiserie - OLEGE | Devis Gratuit Menuisier Île-de-France",
-  description: "Expert menuisier en Île-de-France. OLEGE réalise vos portes, fenêtres, placards et aménagements sur mesure. Devis gratuit et personnalisé. Travail du bois de qualité.",
-  keywords: "menuisier Île-de-France, menuiserie sur mesure, portes fenêtres, placards, OLEGE, devis gratuit menuiserie, artisan menuisier, aménagement bois",
-  authors: [{ name: "OLEGE" }],
-  creator: "OLEGE",
-  publisher: "OLEGE",
+  title: "Menuiserie - ExFactor | Devis Gratuit Menuisier Île-de-France",
+  description: "Expert menuisier en Île-de-France. ExFactor réalise vos portes, fenêtres, placards et aménagements sur mesure. Devis gratuit et personnalisé. Travail du bois de qualité.",
+  keywords: "menuisier Île-de-France, menuiserie sur mesure, portes fenêtres, placards, ExFactor, devis gratuit menuiserie, artisan menuisier, aménagement bois",
+  authors: [{ name: "ExFactor" }],
+  creator: "ExFactor",
+  publisher: "ExFactor",
   openGraph: {
-    title: "Menuiserie OLEGE - Devis Gratuit Menuisier Île-de-France",
+    title: "Menuiserie ExFactor - Devis Gratuit Menuisier Île-de-France",
     description: "Expert menuisier pour vos aménagements sur mesure. Devis gratuit et personnalisé en Île-de-France.",
     type: "website",
     locale: "fr_FR",
-    siteName: "OLEGE - Entrepreneur du bâtiment",
+    siteName: "ExFactor - Entrepreneur du bâtiment",
   },
   twitter: {
     card: "summary",
-    title: "Menuiserie OLEGE - Devis Gratuit",
+    title: "Menuiserie ExFactor - Devis Gratuit",
     description: "Expert menuisier en Île-de-France. Devis gratuit.",
   },
   robots: {
@@ -91,16 +91,16 @@ export default function MenuiseriePage() {
 
   return (
     <ServicePage
-      title="Menuiserie - OLEGE | Devis Gratuit Menuisier Île-de-France"
-      description="Expert menuisier en Île-de-France. OLEGE réalise vos portes, fenêtres, placards et aménagements sur mesure. Devis gratuit et personnalisé."
+      title="Menuiserie - ExFactor | Devis Gratuit Menuisier Île-de-France"
+      description="Expert menuisier en Île-de-France. ExFactor réalise vos portes, fenêtres, placards et aménagements sur mesure. Devis gratuit et personnalisé."
       keywords={["menuisier Île-de-France", "menuiserie sur mesure", "portes fenêtres", "placards", "devis gratuit menuiserie", "artisan menuisier"]}
       serviceName="Menuiserie"
       heroImage="/image-client/menuiserie.jpeg"
       heroTitle="Menuiserie en Île-de-France"
-      heroSubtitle="Aménagements bois sur mesure avec OLEGE"
+      heroSubtitle="Aménagements bois sur mesure avec ExFactor"
       sector="Île-de-France"
       location="Paris et région parisienne"
-      mainDescription="OLEGE, artisan menuisier en Île-de-France, vous accompagne dans tous vos projets d'aménagement bois. Portes, fenêtres, placards sur mesure : notre équipe de 3 collaborateurs qualifiés allie savoir-faire traditionnel et techniques modernes pour vous offrir des réalisations durables avec garantie décennale."
+      mainDescription="ExFactor, artisan menuisier en Île-de-France, vous accompagne dans tous vos projets d'aménagement bois. Portes, fenêtres, placards sur mesure : notre équipe de 3 collaborateurs qualifiés allie savoir-faire traditionnel et techniques modernes pour vous offrir des réalisations durables avec garantie décennale."
       subServices={subServices}
       advantages={advantages}
       serviceArea={serviceArea}

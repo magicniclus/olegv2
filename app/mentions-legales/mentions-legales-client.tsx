@@ -50,9 +50,9 @@ export default function MentionsLegalesClient() {
               </div>
               
               <div className="space-y-4 text-gray-600 leading-relaxed">
-                <p><strong>Raison sociale :</strong> OLEGE</p>
+                <p><strong>Raison sociale :</strong> ExFactor</p>
                 <p><strong>Forme juridique :</strong> Entrepreneur du bâtiment</p>
-                <p><strong>Gérant :</strong> OLEGE</p>
+                <p><strong>Gérant :</strong> ExFactor</p>
                 <p><strong>Adresse du siège social :</strong> Île-de-France</p>
                 <p><strong>Téléphone :</strong> 06 05 59 88 97</p>
                 <p><strong>Email :</strong> <a href="mailto:cxfactor.fr@gmail.com" className="text-gray-600 hover:text-gray-800 transition-colors">cxfactor.fr@gmail.com</a></p>
@@ -65,7 +65,7 @@ export default function MentionsLegalesClient() {
             <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Directeur de publication</h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
-                <p><strong>Directeur de publication :</strong> OLEGE</p>
+                <p><strong>Directeur de publication :</strong> ExFactor</p>
                 <p><strong>Contact :</strong> <a href="mailto:cxfactor.fr@gmail.com" className="text-gray-600 hover:text-gray-800 transition-colors">cxfactor.fr@gmail.com</a></p>
               </div>
             </div>
@@ -93,9 +93,9 @@ export default function MentionsLegalesClient() {
                   sauf autorisation expresse du directeur de la publication.
                 </p>
                 <p>
-                  Les marques et logos figurant sur le site sont déposés par OLEGE ou éventuellement par des partenaires. 
+                  Les marques et logos figurant sur le site sont déposés par ExFactor ou éventuellement par des partenaires. 
                   Toute reproduction totale ou partielle de ces marques ou de ces logos, effectuée à partir des éléments du site 
-                  sans l'autorisation expresse d'OLEGE est donc prohibée.
+                  sans l'autorisation expresse d'ExFactor est donc prohibée.
                 </p>
               </div>
             </div>
@@ -105,12 +105,12 @@ export default function MentionsLegalesClient() {
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Protection des données personnelles</h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  OLEGE s'engage à respecter la réglementation en vigueur applicable au traitement des données personnelles, 
+                  ExFactor s'engage à respecter la réglementation en vigueur applicable au traitement des données personnelles, 
                   notamment la loi n° 78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés dans sa version 
                   actuelle et le Règlement Général sur la Protection des Données (RGPD).
                 </p>
                 <p>
-                  Les données personnelles collectées sur ce site sont destinées à OLEGE et ne sont jamais transmises à des tiers 
+                  Les données personnelles collectées sur ce site sont destinées à ExFactor et ne sont jamais transmises à des tiers 
                   sans votre consentement préalable.
                 </p>
                 <p>
@@ -158,7 +158,7 @@ export default function MentionsLegalesClient() {
                 </p>
                 <p>
                   Tout contenu téléchargé se fait aux risques et périls de l'utilisateur et sous sa seule responsabilité. 
-                  En conséquence, OLEGE ne saurait être tenu responsable d'un quelconque dommage subi par l'ordinateur de l'utilisateur 
+                  En conséquence, ExFactor ne saurait être tenu responsable d'un quelconque dommage subi par l'ordinateur de l'utilisateur 
                   ou d'une quelconque perte de données consécutives au téléchargement.
                 </p>
               </div>

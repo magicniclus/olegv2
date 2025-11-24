@@ -57,7 +57,7 @@ export default function Footer() {
                   />
                 </motion.div>
                 <span className="text-xl font-bold">
-                  OLEGE
+                  ExFactor
                 </span>
               </div>
               <p className="text-slate-300 text-sm leading-relaxed">
@@ -154,7 +154,7 @@ export default function Footer() {
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              © {currentYear} OLEGE. Tous droits réservés.
+              © {currentYear} ExFactor. Tous droits réservés.
             </motion.p>
 
             {/* Powered by */}

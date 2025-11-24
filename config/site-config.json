@@ -1,15 +1,15 @@
 {
   "company": {
-    "name": "OLEGE",
-    "legalName": "Olege - Entrepreneur du bâtiment",
+    "name": "ExFactor",
+    "legalName": "ExFactor - Entrepreneur du bâtiment",
     "address": "Île-de-France",
     "phone": "06 05 59 88 97",
     "email": "cxfactor.fr@gmail.com",
     "siret": "Entrepreneur du bâtiment",
-    "ceo": "OLEGE"
+    "ceo": "ExFactor"
   },
   "hero": {
-    "title": "OLEGE - Entrepreneur du bâtiment en Île-de-France",
+    "title": "ExFactor - Entrepreneur du bâtiment en Île-de-France",
     "subtitle": "Expert du secteur BTP spécialisé en électricité, placo peinture, menuiserie, cuisine & salle de bains, rénovation globale et sols carrelage. Votre entrepreneur du bâtiment de confiance pour tous vos projets en Île-de-France.",
     "buttonText": "Demander un devis",
     "buttonHref": "#contact",
@@ -22,7 +22,7 @@
         "smallTitle": "Notre expertise",
         "title": "Entrepreneur du bâtiment professionnel",
         "subtitle": "Expertise complète dans le secteur du BTP",
-        "content": "Notre entreprise, OLEGE, est spécialisée dans les travaux du bâtiment avec une expertise en électricité, placo peinture, menuiserie, cuisine & salle de bains, rénovation globale et sols carrelage. Notre équipe de 3 collaborateurs qualifiés intervient dans un rayon de 100km avec garantie décennale. Notre mission : vous offrir un service de qualité avec des finitions soignées.",
+        "content": "Notre entreprise, ExFactor, est spécialisée dans les travaux du bâtiment avec une expertise en électricité, placo peinture, menuiserie, cuisine & salle de bains, rénovation globale et sols carrelage. Notre équipe de 3 collaborateurs qualifiés intervient dans un rayon de 100km avec garantie décennale. Notre mission : vous offrir un service de qualité avec des finitions soignées.",
         "image": "/image-client/chantier/huit.jpeg",
         "gradientFrom": "#ff7e5f",
         "gradientTo": "#feb47b",

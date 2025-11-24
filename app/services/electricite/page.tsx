@@ -3,22 +3,22 @@ import ServicePage from '@/components/ServicePage';
 
 // Métadonnées SEO pour la page électricité
 export const metadata: Metadata = {
-  title: "Électricité - OLEGE | Devis Gratuit Électricien Île-de-France",
-  description: "Expert électricien en Île-de-France. OLEGE réalise vos installations électriques, mise aux normes et dépannage. Devis gratuit et personnalisé. Intervention rapide.",
-  keywords: "électricien Île-de-France, installation électrique, mise aux normes, dépannage électrique, OLEGE, devis gratuit électricité, artisan électricien, tableau électrique",
-  authors: [{ name: "OLEGE" }],
-  creator: "OLEGE",
-  publisher: "OLEGE",
+  title: "Électricité - ExFactor | Devis Gratuit Électricien Île-de-France",
+  description: "Expert électricien en Île-de-France. ExFactor réalise vos installations électriques, mise aux normes et dépannage. Devis gratuit et personnalisé. Intervention rapide.",
+  keywords: "électricien Île-de-France, installation électrique, mise aux normes, dépannage électrique, ExFactor, devis gratuit électricité, artisan électricien, tableau électrique",
+  authors: [{ name: "ExFactor" }],
+  creator: "ExFactor",
+  publisher: "ExFactor",
   openGraph: {
-    title: "Électricité OLEGE - Devis Gratuit Électricien Île-de-France",
+    title: "Électricité ExFactor - Devis Gratuit Électricien Île-de-France",
     description: "Expert électricien pour vos installations et dépannages. Devis gratuit et personnalisé en Île-de-France.",
     type: "website",
     locale: "fr_FR",
-    siteName: "OLEGE - Entrepreneur du bâtiment",
+    siteName: "ExFactor - Entrepreneur du bâtiment",
   },
   twitter: {
     card: "summary",
-    title: "Électricité OLEGE - Devis Gratuit",
+    title: "Électricité ExFactor - Devis Gratuit",
     description: "Expert électricien en Île-de-France. Devis gratuit.",
   },
   robots: {
@@ -91,16 +91,16 @@ export default function ElectricitePage() {
 
   return (
     <ServicePage
-      title="Électricité - OLEGE | Devis Gratuit Électricien Île-de-France"
-      description="Expert électricien en Île-de-France. OLEGE réalise vos installations électriques, mise aux normes et dépannage. Devis gratuit et personnalisé."
+      title="Électricité - ExFactor | Devis Gratuit Électricien Île-de-France"
+      description="Expert électricien en Île-de-France. ExFactor réalise vos installations électriques, mise aux normes et dépannage. Devis gratuit et personnalisé."
       keywords={["électricien Île-de-France", "installation électrique", "mise aux normes", "dépannage électrique", "devis gratuit électricité", "artisan électricien"]}
       serviceName="Électricité"
       heroImage="/image-client/electricite.jpeg"
       heroTitle="Électricité en Île-de-France"
-      heroSubtitle="Installation & rénovation électrique avec OLEGE"
+      heroSubtitle="Installation & rénovation électrique avec ExFactor"
       sector="Île-de-France"
       location="Paris et région parisienne"
-      mainDescription="OLEGE, votre électricien de confiance en Île-de-France, vous accompagne dans tous vos projets électriques. Installation complète, mise aux normes, dépannage : notre équipe de 3 collaborateurs qualifiés intervient avec garantie décennale. Nous privilégions la qualité et la sécurité pour tous vos travaux électriques."
+      mainDescription="ExFactor, votre électricien de confiance en Île-de-France, vous accompagne dans tous vos projets électriques. Installation complète, mise aux normes, dépannage : notre équipe de 3 collaborateurs qualifiés intervient avec garantie décennale. Nous privilégions la qualité et la sécurité pour tous vos travaux électriques."
       subServices={subServices}
       advantages={advantages}
       serviceArea={serviceArea}

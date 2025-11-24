@@ -3,22 +3,22 @@ import ServicePage from '@/components/ServicePage';
 
 // Métadonnées SEO pour la page cuisine salle de bains
 export const metadata: Metadata = {
-  title: "Cuisine & Salle de Bains - OLEGE | Devis Gratuit Rénovation Île-de-France",
-  description: "Expert rénovation cuisine et salle de bains en Île-de-France. OLEGE réalise vos projets clés en main : plomberie, carrelage, mobilier. Devis gratuit et personnalisé.",
-  keywords: "rénovation cuisine Île-de-France, salle de bains, plomberie, carrelage, OLEGE, devis gratuit cuisine, artisan salle de bain, aménagement",
-  authors: [{ name: "OLEGE" }],
-  creator: "OLEGE",
-  publisher: "OLEGE",
+  title: "Cuisine & Salle de Bains - ExFactor | Devis Gratuit Rénovation Île-de-France",
+  description: "Expert rénovation cuisine et salle de bains en Île-de-France. ExFactor réalise vos projets clés en main : plomberie, carrelage, mobilier. Devis gratuit et personnalisé.",
+  keywords: "rénovation cuisine Île-de-France, salle de bains, plomberie, carrelage, ExFactor, devis gratuit cuisine, artisan salle de bain, aménagement",
+  authors: [{ name: "ExFactor" }],
+  creator: "ExFactor",
+  publisher: "ExFactor",
   openGraph: {
-    title: "Cuisine & Salle de Bains OLEGE - Devis Gratuit Île-de-France",
+    title: "Cuisine & Salle de Bains ExFactor - Devis Gratuit Île-de-France",
     description: "Expert rénovation cuisine et salle de bains. Projets clés en main. Devis gratuit et personnalisé en Île-de-France.",
     type: "website",
     locale: "fr_FR",
-    siteName: "OLEGE - Entrepreneur du bâtiment",
+    siteName: "ExFactor - Entrepreneur du bâtiment",
   },
   twitter: {
     card: "summary",
-    title: "Cuisine & Salle de Bains OLEGE - Devis Gratuit",
+    title: "Cuisine & Salle de Bains ExFactor - Devis Gratuit",
     description: "Expert rénovation cuisine et salle de bains en Île-de-France. Devis gratuit.",
   },
   robots: {
@@ -91,16 +91,16 @@ export default function CuisineSalleDeBainsPage() {
 
   return (
     <ServicePage
-      title="Cuisine & Salle de Bains - OLEGE | Devis Gratuit Rénovation Île-de-France"
-      description="Expert rénovation cuisine et salle de bains en Île-de-France. OLEGE réalise vos projets clés en main : plomberie, carrelage, mobilier. Devis gratuit et personnalisé."
+      title="Cuisine & Salle de Bains - ExFactor | Devis Gratuit Rénovation Île-de-France"
+      description="Expert rénovation cuisine et salle de bains en Île-de-France. ExFactor réalise vos projets clés en main : plomberie, carrelage, mobilier. Devis gratuit et personnalisé."
       keywords={["rénovation cuisine Île-de-France", "salle de bains", "plomberie", "carrelage", "devis gratuit cuisine", "artisan salle de bain"]}
       serviceName="Cuisine & Salle de Bains"
       heroImage="/image-client/salle de bain.jpeg"
       heroTitle="Cuisine & Salle de Bains en Île-de-France"
-      heroSubtitle="Rénovation complète avec OLEGE"
+      heroSubtitle="Rénovation complète avec ExFactor"
       sector="Île-de-France"
       location="Paris et région parisienne"
-      mainDescription="OLEGE, spécialiste de la rénovation de cuisines et salles de bains en Île-de-France, vous accompagne dans vos projets clés en main. Notre équipe de 3 collaborateurs qualifiés coordonne tous les corps de métier pour vous offrir des espaces fonctionnels et esthétiques avec garantie décennale."
+      mainDescription="ExFactor, spécialiste de la rénovation de cuisines et salles de bains en Île-de-France, vous accompagne dans vos projets clés en main. Notre équipe de 3 collaborateurs qualifiés coordonne tous les corps de métier pour vous offrir des espaces fonctionnels et esthétiques avec garantie décennale."
       subServices={subServices}
       advantages={advantages}
       serviceArea={serviceArea}

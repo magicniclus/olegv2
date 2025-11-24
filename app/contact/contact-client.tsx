@@ -70,7 +70,7 @@ export default function ContactClient() {
               Contactez-nous
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
-              Un projet d'électricité, placo peinture, menuiserie, cuisine, salle de bains ou rénovation globale ? Notre équipe OLEGE est là pour vous accompagner en Île-de-France.
+              Un projet d'électricité, placo peinture, menuiserie, cuisine, salle de bains ou rénovation globale ? Notre équipe ExFactor est là pour vous accompagner en Île-de-France.
             </p>
           </motion.div>
         </div>

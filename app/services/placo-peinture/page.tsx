@@ -3,22 +3,22 @@ import ServicePage from '@/components/ServicePage';
 
 // Métadonnées SEO pour la page placo peinture
 export const metadata: Metadata = {
-  title: "Placo Peinture - OLEGE | Devis Gratuit Plaquiste Île-de-France",
-  description: "Expert placo peinture en Île-de-France. OLEGE réalise vos cloisons, enduits et peinture intérieure/extérieure. Devis gratuit et personnalisé. Finitions soignées.",
-  keywords: "placo peinture Île-de-France, plaquiste, cloisons sèches, enduit peinture, OLEGE, devis gratuit placo, artisan peintre, finitions",
-  authors: [{ name: "OLEGE" }],
-  creator: "OLEGE",
-  publisher: "OLEGE",
+  title: "Placo Peinture - ExFactor | Devis Gratuit Plaquiste Île-de-France",
+  description: "Expert placo peinture en Île-de-France. ExFactor réalise vos cloisons, enduits et peinture intérieure/extérieure. Devis gratuit et personnalisé. Finitions soignées.",
+  keywords: "placo peinture Île-de-France, plaquiste, cloisons sèches, enduit peinture, ExFactor, devis gratuit placo, artisan peintre, finitions",
+  authors: [{ name: "ExFactor" }],
+  creator: "ExFactor",
+  publisher: "ExFactor",
   openGraph: {
-    title: "Placo Peinture OLEGE - Devis Gratuit Plaquiste Île-de-France",
+    title: "Placo Peinture ExFactor - Devis Gratuit Plaquiste Île-de-France",
     description: "Expert placo peinture pour vos cloisons et finitions. Devis gratuit et personnalisé en Île-de-France.",
     type: "website",
     locale: "fr_FR",
-    siteName: "OLEGE - Entrepreneur du bâtiment",
+    siteName: "ExFactor - Entrepreneur du bâtiment",
   },
   twitter: {
     card: "summary",
-    title: "Placo Peinture OLEGE - Devis Gratuit",
+    title: "Placo Peinture ExFactor - Devis Gratuit",
     description: "Expert placo peinture en Île-de-France. Devis gratuit.",
   },
   robots: {
@@ -91,16 +91,16 @@ export default function PlacoPeinturePage() {
 
   return (
     <ServicePage
-      title="Placo Peinture - OLEGE | Devis Gratuit Plaquiste Île-de-France"
-      description="Expert placo peinture en Île-de-France. OLEGE réalise vos cloisons, enduits et peinture intérieure/extérieure. Devis gratuit et personnalisé."
+      title="Placo Peinture - ExFactor | Devis Gratuit Plaquiste Île-de-France"
+      description="Expert placo peinture en Île-de-France. ExFactor réalise vos cloisons, enduits et peinture intérieure/extérieure. Devis gratuit et personnalisé."
       keywords={["placo peinture Île-de-France", "plaquiste", "cloisons sèches", "enduit peinture", "devis gratuit placo", "artisan peintre"]}
       serviceName="Placo Peinture"
       heroImage="/image-client/placo.jpeg"
       heroTitle="Placo Peinture en Île-de-France"
-      heroSubtitle="Cloisons et finitions avec OLEGE"
+      heroSubtitle="Cloisons et finitions avec ExFactor"
       sector="Île-de-France"
       location="Paris et région parisienne"
-      mainDescription="OLEGE, spécialiste placo peinture en Île-de-France, vous accompagne dans tous vos projets de cloisons et finitions. Notre équipe de 3 collaborateurs qualifiés maîtrise parfaitement les techniques de plâtrerie et peinture pour vous offrir des finitions parfaites avec garantie décennale."
+      mainDescription="ExFactor, spécialiste placo peinture en Île-de-France, vous accompagne dans tous vos projets de cloisons et finitions. Notre équipe de 3 collaborateurs qualifiés maîtrise parfaitement les techniques de plâtrerie et peinture pour vous offrir des finitions parfaites avec garantie décennale."
       subServices={subServices}
       advantages={advantages}
       serviceArea={serviceArea}

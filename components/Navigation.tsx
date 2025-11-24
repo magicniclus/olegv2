@@ -102,7 +102,7 @@ export default function Navigation() {
                 />
               </motion.div>
               <div className="flex flex-col">
-                <span className="text-xl font-bold text-gray-900">OLEGE</span>
+                <span className="text-xl font-bold text-gray-900">ExFactor</span>
                 <span className="text-xs text-gray-600 font-medium">entrepreneur du bâtiment</span>
               </div>
             </Link>
@@ -286,7 +286,7 @@ export default function Navigation() {
                 </motion.div>
                 <div className="flex flex-col">
                   <span className="text-xl font-bold text-foreground">
-                    OLEGE
+                    ExFactor
                   </span>
                   <span className="text-xs text-gray-400 font-medium">
                     entrepreneur du bâtiment

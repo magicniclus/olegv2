@@ -3,22 +3,22 @@ import ServicePage from '@/components/ServicePage';
 
 // Métadonnées SEO pour la page rénovation globale
 export const metadata: Metadata = {
-  title: "Rénovation Globale - OLEGE | Devis Gratuit Rénovation Île-de-France",
-  description: "Expert rénovation globale en Île-de-France. OLEGE coordonne tous vos travaux : électricité, plomberie, carrelage, peinture. Devis gratuit et personnalisé. Projet clé en main.",
-  keywords: "rénovation globale Île-de-France, rénovation appartement, travaux complets, OLEGE, devis gratuit rénovation, entrepreneur bâtiment, projet clé en main",
-  authors: [{ name: "OLEGE" }],
-  creator: "OLEGE",
-  publisher: "OLEGE",
+  title: "Rénovation Globale - ExFactor | Devis Gratuit Rénovation Île-de-France",
+  description: "Expert rénovation globale en Île-de-France. ExFactor coordonne tous vos travaux : électricité, plomberie, carrelage, peinture. Devis gratuit et personnalisé. Projet clé en main.",
+  keywords: "rénovation globale Île-de-France, rénovation appartement, travaux complets, ExFactor, devis gratuit rénovation, entrepreneur bâtiment, projet clé en main",
+  authors: [{ name: "ExFactor" }],
+  creator: "ExFactor",
+  publisher: "ExFactor",
   openGraph: {
-    title: "Rénovation Globale OLEGE - Devis Gratuit Île-de-France",
+    title: "Rénovation Globale ExFactor - Devis Gratuit Île-de-France",
     description: "Expert rénovation globale. Coordination de tous les corps de métier. Devis gratuit et personnalisé en Île-de-France.",
     type: "website",
     locale: "fr_FR",
-    siteName: "OLEGE - Entrepreneur du bâtiment",
+    siteName: "ExFactor - Entrepreneur du bâtiment",
   },
   twitter: {
     card: "summary",
-    title: "Rénovation Globale OLEGE - Devis Gratuit",
+    title: "Rénovation Globale ExFactor - Devis Gratuit",
     description: "Expert rénovation globale en Île-de-France. Devis gratuit.",
   },
   robots: {
@@ -91,16 +91,16 @@ export default function RenovationGlobalePage() {
 
   return (
     <ServicePage
-      title="Rénovation Globale - OLEGE | Devis Gratuit Rénovation Île-de-France"
-      description="Expert rénovation globale en Île-de-France. OLEGE coordonne tous vos travaux : électricité, plomberie, carrelage, peinture. Devis gratuit et personnalisé."
+      title="Rénovation Globale - ExFactor | Devis Gratuit Rénovation Île-de-France"
+      description="Expert rénovation globale en Île-de-France. ExFactor coordonne tous vos travaux : électricité, plomberie, carrelage, peinture. Devis gratuit et personnalisé."
       keywords={["rénovation globale Île-de-France", "rénovation appartement", "travaux complets", "devis gratuit rénovation", "entrepreneur bâtiment"]}
       serviceName="Rénovation Globale"
       heroImage="/image-client/chantier/dix.jpeg"
       heroTitle="Rénovation Globale en Île-de-France"
-      heroSubtitle="Projets complets avec OLEGE"
+      heroSubtitle="Projets complets avec ExFactor"
       sector="Île-de-France"
       location="Paris et région parisienne"
-      mainDescription="OLEGE, entrepreneur du bâtiment en Île-de-France, vous accompagne dans vos projets de rénovation globale. Notre équipe de 3 collaborateurs qualifiés coordonne tous les corps de métier pour vous offrir un projet clé en main avec garantie décennale. Un seul interlocuteur pour toute votre rénovation."
+      mainDescription="ExFactor, entrepreneur du bâtiment en Île-de-France, vous accompagne dans vos projets de rénovation globale. Notre équipe de 3 collaborateurs qualifiés coordonne tous les corps de métier pour vous offrir un projet clé en main avec garantie décennale. Un seul interlocuteur pour toute votre rénovation."
       subServices={subServices}
       advantages={advantages}
       serviceArea={serviceArea}

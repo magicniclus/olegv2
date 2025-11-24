@@ -229,7 +229,7 @@ Email automatique généré le ${new Date().toLocaleString('fr-FR')}
       to: recipientEmail,
       from: {
         email: 'cxfactor.fr@gmail.com',
-        name: 'OLEGE - Notifications'
+        name: 'ExFactor - Notifications'
       },
       subject: `🎯 Nouveau Prospect : ${prospectData.prenom} ${prospectData.nom} - ${prospectData.source === 'hero' ? 'Formulaire' : 'Popup'}`,
       text: textContent,

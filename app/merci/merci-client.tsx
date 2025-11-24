@@ -56,7 +56,7 @@ export default function MerciClient() {
               Nous avons bien reçu votre demande
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              Notre équipe OLEGE va étudier votre projet et vous recontacter 
+              Notre équipe ExFactor va étudier votre projet et vous recontacter 
               dans les plus brefs délais pour établir un devis personnalisé et gratuit.
             </p>
           </motion.div>
