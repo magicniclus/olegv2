@@ -63,7 +63,7 @@ export default function ProjectGallery({
   };
 
   const showMoreImages = () => {
-    setDisplayCount(images.length);
+    setDisplayCount(galleryImages.length);
   };
 
   useEffect(() => {
@@ -142,7 +142,7 @@ export default function ProjectGallery({
                 className="bg-orange-500 hover:bg-orange-600 text-white shadow-lg hover:shadow-xl transition-all duration-300"
                 onClick={showMoreImages}
               >
-                Voir plus de réalisations ({images.length - displayCount} restantes)
+                Voir plus de réalisations ({galleryImages.length - displayCount} restantes)
               </Button>
             </motion.div>
           )}
