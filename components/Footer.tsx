@@ -20,9 +20,12 @@ export default function Footer() {
   ];
 
   const servicesLinks = [
-    { name: 'Électricité', href: '#services' },
-    { name: 'Peinture', href: '#services' },
-    { name: 'Plâtrerie', href: '#services' },
+    { name: 'Électricité', href: '/services/electricite' },
+    { name: 'Placo Peinture', href: '/services/placo-peinture' },
+    { name: 'Menuiserie', href: '/services/menuiserie' },
+    { name: 'Cuisine & Salle de bains', href: '/services/cuisine-salle-de-bains' },
+    { name: 'Sols Carrelage', href: '/services/sols-carrelage' },
+    { name: 'Rénovation globale', href: '/services/renovation-globale' },
   ];
 
   return (

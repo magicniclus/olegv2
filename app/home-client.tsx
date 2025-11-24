@@ -27,7 +27,8 @@ export default function HomeClient() {
       content: "Installation électrique complète, rénovation de tableaux électriques, mise aux normes et dépannage avec garantie décennale.",
       image: "/image-client/electricite.jpeg",
       gradientFrom: "#ff7e5f",
-      gradientTo: "#feb47b"
+      gradientTo: "#feb47b",
+      href: "/services/electricite"
     },
     {
       title: "Placo Peinture",
@@ -35,7 +36,8 @@ export default function HomeClient() {
       content: "Travaux de plâtrerie et peinture intérieure et extérieure, préparation des supports, finitions soignées et conseils couleurs.",
       image: "/image-client/placo.jpeg",
       gradientFrom: "#667eea",
-      gradientTo: "#764ba2"
+      gradientTo: "#764ba2",
+      href: "/services/placo-peinture"
     },
     {
       title: "Menuiserie",
@@ -43,7 +45,8 @@ export default function HomeClient() {
       content: "Pose de portes, fenêtres, placards sur mesure, parquet et tous travaux de menuiserie intérieure et extérieure.",
       image: "/image-client/menuiserie.jpeg",
       gradientFrom: "#28a745",
-      gradientTo: "#20c997"
+      gradientTo: "#20c997",
+      href: "/services/menuiserie"
     },
     {
       title: "Cuisine & Salle de bains",
@@ -51,7 +54,8 @@ export default function HomeClient() {
       content: "Rénovation complète de cuisines et salles de bains, pose de meubles, électroménager, plomberie, carrelage et sanitaires avec finitions soignées.",
       image: "/image-client/salle de bain.jpeg",
       gradientFrom: "#6f42c1",
-      gradientTo: "#e83e8c"
+      gradientTo: "#e83e8c",
+      href: "/services/cuisine-salle-de-bains"
     },
     {
       title: "Sols Carrelage",
@@ -59,7 +63,8 @@ export default function HomeClient() {
       content: "Pose de carrelage, parquet, vinyle, ragréage et préparation des supports pour tous types de revêtements de sol.",
       image: "/image-client/sol.jpeg",
       gradientFrom: "#fd7e14",
-      gradientTo: "#ffc107"
+      gradientTo: "#ffc107",
+      href: "/services/sols-carrelage"
     },
     {
       title: "Rénovation globale",
@@ -67,7 +72,8 @@ export default function HomeClient() {
       content: "Rénovation complète d'appartements et maisons, coordination de tous les corps de métier pour un projet clé en main avec garantie décennale.",
       image: "/image-client/chantier/dix.jpeg",
       gradientFrom: "#17a2b8",
-      gradientTo: "#6c757d"
+      gradientTo: "#6c757d",
+      href: "/services/renovation-globale"
     }
   ];
 
