@@ -118,7 +118,7 @@ export default function MerciClient() {
                 className="border-orange-300 text-orange-700 hover:bg-orange-100"
                 asChild
               >
-                <a href="mailto:contact@olege.fr" className="flex items-center justify-center">
+                <a href="mailto:cxfactor.fr@gmail.com" className="flex items-center justify-center">
                   <Mail className="h-4 w-4 mr-2" />
                   Email
                 </a>

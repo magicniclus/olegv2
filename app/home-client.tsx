@@ -23,50 +23,58 @@ export default function HomeClient() {
   const servicesData = [
     {
       title: "Électricité",
-      subtitle: "Installation et rénovation électrique",
-      content: "Installation complète et rénovation de systèmes électriques. Mise aux normes, tableaux électriques, éclairage et prises. Intervention sécurisée et conforme aux normes.",
+      subtitle: "Installation & Rénovation",
+      content: "Installation électrique complète, rénovation de tableaux électriques, mise aux normes et dépannage avec garantie décennale.",
       image: "/image-client/electricite.jpeg",
       gradientFrom: "#ff7e5f",
       gradientTo: "#feb47b"
     },
     {
-      title: "Plâtrerie",
-      subtitle: "Cloisons et finitions plâtre",
-      content: "Pose de cloisons sèches, doublages, faux plafonds et finitions plâtrerie. Création et aménagement d'espaces avec isolation thermique et phonique.",
+      title: "Placo Peinture",
+      subtitle: "Intérieur & Extérieur",
+      content: "Travaux de plâtrerie et peinture intérieure et extérieure, préparation des supports, finitions soignées et conseils couleurs.",
       image: "/image-client/placo.jpeg",
       gradientFrom: "#667eea",
       gradientTo: "#764ba2"
     },
     {
       title: "Menuiserie",
-      subtitle: "Travaux de menuiserie sur mesure",
-      content: "Fabrication et pose de menuiseries intérieures et extérieures. Portes, fenêtres, placards, aménagements sur mesure. Travail du bois de qualité.",
+      subtitle: "Bois & Aménagement",
+      content: "Pose de portes, fenêtres, placards sur mesure, parquet et tous travaux de menuiserie intérieure et extérieure.",
       image: "/image-client/menuiserie.jpeg",
       gradientFrom: "#28a745",
       gradientTo: "#20c997"
     },
     {
-      title: "Cuisine & Salle de Bain",
-      subtitle: "Aménagement et rénovation",
-      content: "Conception et réalisation de cuisines et salles de bain sur mesure. Plomberie, carrelage, mobilier. Projets clés en main pour vos espaces de vie.",
+      title: "Cuisine & Salle de bains",
+      subtitle: "Conception & Rénovation",
+      content: "Rénovation complète de cuisines et salles de bains, pose de meubles, électroménager, plomberie, carrelage et sanitaires avec finitions soignées.",
       image: "/image-client/salle de bain.jpeg",
       gradientFrom: "#6f42c1",
       gradientTo: "#e83e8c"
     },
     {
-      title: "Revêtements de Sols",
-      subtitle: "Pose et rénovation de sols",
-      content: "Installation de tous types de revêtements : carrelage, parquet, lino, moquette. Préparation des supports et finitions soignées.",
+      title: "Sols Carrelage",
+      subtitle: "Revêtements & Finitions",
+      content: "Pose de carrelage, parquet, vinyle, ragréage et préparation des supports pour tous types de revêtements de sol.",
       image: "/image-client/sol.jpeg",
       gradientFrom: "#fd7e14",
       gradientTo: "#ffc107"
+    },
+    {
+      title: "Rénovation globale",
+      subtitle: "Projets Complets",
+      content: "Rénovation complète d'appartements et maisons, coordination de tous les corps de métier pour un projet clé en main avec garantie décennale.",
+      image: "/image-client/chantier/dix.jpeg",
+      gradientFrom: "#17a2b8",
+      gradientTo: "#6c757d"
     }
   ];
 
   const contactInfo = {
     address: "Île-de-France\nIntervention dans toute la région\nRayon d'intervention : 100 km",
     phone: "06 05 59 88 97",
-    email: "contact@olege.fr",
+    email: "cxfactor.fr@gmail.com",
     mapEmbedUrl: "https://maps.google.com/maps?q=Ile-de-France,France&t=&z=10&ie=UTF8&iwloc=&output=embed"
   };
 
@@ -118,7 +126,7 @@ export default function HomeClient() {
       <TeamSection config={config.team} />
       <ContactSection 
         title="Contactez-nous"
-        subtitle="Parlons de votre projet d'électricité, plâtrerie, menuiserie, cuisine, salle de bain ou sols en Île-de-France"
+        subtitle="Parlons de votre projet d'électricité, placo peinture, menuiserie, cuisine & salle de bains, rénovation globale ou sols carrelage en Île-de-France"
         contactInfo={contactInfo} 
       />
 

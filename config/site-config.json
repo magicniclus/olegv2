@@ -4,13 +4,13 @@
     "legalName": "Olege - Entrepreneur du bâtiment",
     "address": "Île-de-France",
     "phone": "06 05 59 88 97",
-    "email": "contact@olege.fr",
+    "email": "cxfactor.fr@gmail.com",
     "siret": "Entrepreneur du bâtiment",
     "ceo": "OLEGE"
   },
   "hero": {
     "title": "OLEGE - Entrepreneur du bâtiment en Île-de-France",
-    "subtitle": "Expert du secteur BTP spécialisé en électricité, plâtrerie, menuiserie, cuisine, salle de bain et sols. Votre entrepreneur du bâtiment de confiance pour tous vos projets de construction et rénovation en Île-de-France.",
+    "subtitle": "Expert du secteur BTP spécialisé en électricité, placo peinture, menuiserie, cuisine & salle de bains, rénovation globale et sols carrelage. Votre entrepreneur du bâtiment de confiance pour tous vos projets en Île-de-France.",
     "buttonText": "Demander un devis",
     "buttonHref": "#contact",
     "backgroundImage": "/image-client/hero.png",
@@ -22,7 +22,7 @@
         "smallTitle": "Notre expertise",
         "title": "Entrepreneur du bâtiment professionnel",
         "subtitle": "Expertise complète dans le secteur du BTP",
-        "content": "Notre entreprise, OLEGE, est spécialisée dans les travaux du bâtiment avec une expertise en électricité, plâtrerie, menuiserie, cuisine, salle de bain et revêtements de sols. Nous mettons notre savoir-faire au service de vos projets de construction et rénovation. Notre mission : apporter un travail soigné, durable et de qualité, dans le respect des délais et des normes en Île-de-France.",
+        "content": "Notre entreprise, OLEGE, est spécialisée dans les travaux du bâtiment avec une expertise en électricité, placo peinture, menuiserie, cuisine & salle de bains, rénovation globale et sols carrelage. Notre équipe de 3 collaborateurs qualifiés intervient dans un rayon de 100km avec garantie décennale. Notre mission : vous offrir un service de qualité avec des finitions soignées.",
         "image": "/image-client/chantier/huit.jpeg",
         "gradientFrom": "#ff7e5f",
         "gradientTo": "#feb47b",
@@ -32,9 +32,9 @@
       },
       {
         "smallTitle": "Nos spécialités",
-        "title": "Électricité, Plâtrerie, Menuiserie, Cuisine & SDB",
+        "title": "Électricité, Placo Peinture, Menuiserie, Rénovation",
         "subtitle": "Expert multi-services du bâtiment",
-        "content": "Ce qui nous distingue, c'est notre expertise technique polyvalente, notre rigueur et notre relation de confiance avec nos clients. Chaque chantier est pour nous une nouvelle occasion de prouver que les travaux du bâtiment peuvent allier qualité et modernité. Nous maîtrisons parfaitement les normes de sécurité et de construction en vigueur dans nos cinq domaines d'expertise.",
+        "content": "Spécialisés dans l'électricité, le placo peinture, la menuiserie, les cuisines & salles de bains, la rénovation globale et sols carrelage, nous intervenons sur tous types de chantiers en Île-de-France. Notre équipe de 3 collaborateurs qualifiés vous garantit des travaux conformes aux normes en vigueur, avec la sécurité d'une garantie décennale. Nous privilégions la qualité et la satisfaction client.",
         "image": "/image-client/chantier/vinght-trois.jpeg",
         "gradientFrom": "#667eea",
         "gradientTo": "#764ba2",
@@ -46,38 +46,38 @@
   },
   "gallery": {
     "title": "Nos Réalisations",
-    "subtitle": "Découvrez nos projets d'électricité, plâtrerie, menuiserie, cuisine, salle de bain et sols en Île-de-France",
+    "subtitle": "Découvrez nos travaux d'électricité, placo peinture, menuiserie, cuisine & salle de bains, rénovation globale et sols carrelage en Île-de-France",
     "initialDisplayCount": 4,
     "images": [
       {
-        "src": "/image-client/chantier/lesphotos/1.jpeg",
-        "alt": "Réalisation chantier OLEGE",
-        "title": "Projet électricité - Île-de-France"
+        "src": "/image-client/chantier/un.jpeg",
+        "alt": "Réalisation chantier 1",
+        "title": "Réalisation chantier 1"
       },
       {
-        "src": "/image-client/chantier/lesphotos/2.jpeg",
-        "alt": "Travaux de rénovation",
-        "title": "Rénovation complète - Île-de-France"
+        "src": "/image-client/chantier/deux.jpeg",
+        "alt": "Réalisation chantier 2",
+        "title": "Réalisation chantier 2"
       },
       {
-        "src": "/image-client/chantier/lesphotos/3.jpeg",
-        "alt": "Aménagement intérieur",
-        "title": "Aménagement sur mesure - Île-de-France"
+        "src": "/image-client/chantier/trois.jpeg",
+        "alt": "Réalisation chantier 3",
+        "title": "Réalisation chantier 3"
       },
       {
-        "src": "/image-client/chantier/lesphotos/4.jpeg",
-        "alt": "Finitions de qualité",
-        "title": "Finitions soignées - Île-de-France"
+        "src": "/image-client/chantier/quatre.jpeg",
+        "alt": "Réalisation chantier 4",
+        "title": "Réalisation chantier 4"
       },
       {
-        "src": "/image-client/chantier/dix.jpeg",
-        "alt": "Chantier en cours",
-        "title": "Chantier OLEGE - Île-de-France"
+        "src": "/image-client/chantier/cinq.jpeg",
+        "alt": "Réalisation chantier 5",
+        "title": "Réalisation chantier 5"
       },
       {
-        "src": "/image-client/chantier/lesphotos/5.jpeg",
-        "alt": "Travaux multi-services",
-        "title": "Services complets - Île-de-France"
+        "src": "/image-client/chantier/six.jpeg",
+        "alt": "Réalisation chantier 6",
+        "title": "Réalisation chantier 6"
       }
     ]
   },
@@ -90,7 +90,7 @@
       {
         "name": "Olege",
         "position": "Fondateur & Entrepreneur du bâtiment",
-        "description": "Passionné par le secteur du BTP, je mets mon expertise en électricité, plâtrerie, menuiserie, cuisine, salle de bain et revêtements de sols au service de vos projets en Île-de-France. Avec une équipe de 2 à 5 collaborateurs, nous intervenons dans un rayon de 100 km. Mon engagement : vous offrir un service de qualité, dans le respect des délais et avec un souci constant du détail.",
+        "description": "Spécialisés en électricité, placo peinture, menuiserie, cuisine & salle de bains, rénovation globale et sols carrelage en Île-de-France. Notre équipe de 3 collaborateurs qualifiés vous garantit des travaux conformes aux normes en vigueur, avec la sécurité d'une garantie décennale. Nous privilégions la qualité et la satisfaction client sur chaque intervention.",
         "photo": "/image-client/client.jpg"
       }
     ]
