@@ -3,23 +3,23 @@ import ContactClient from './contact-client';
 
 // Métadonnées SEO pour la page contact
 export const metadata: Metadata = {
-  title: "Contact - MARQUES VAZ PLACO | Devis Gratuit Plaquiste PACA",
-  description: "Contactez MARQUES VAZ PLACO pour votre projet de plâtrerie, cloisons sèches, doublages ou faux plafonds en Provence-Alpes-Côte d'Azur. Devis gratuit et personnalisé. Intervention rapide à Marseille et environs.",
-  keywords: "contact MARQUES VAZ PLACO, devis gratuit plaquiste, contact plaquiste PACA, devis cloisons sèches Marseille, contact artisan Bouches-du-Rhône, plâtrerie contact",
-  authors: [{ name: "AMILTON VAZ" }],
-  creator: "MARQUES VAZ PLACO",
-  publisher: "MARQUES VAZ PLACO",
+  title: "Contact - OLEGE | Devis Gratuit Entrepreneur Bâtiment Île-de-France",
+  description: "Contactez OLEGE pour votre projet d'électricité, peinture ou plâtrerie en Île-de-France. Devis gratuit et personnalisé. Intervention rapide dans toute la région.",
+  keywords: "contact OLEGE, devis gratuit entrepreneur bâtiment, contact électricien Île-de-France, devis peinture, contact artisan, électricité contact",
+  authors: [{ name: "OLEGE" }],
+  creator: "OLEGE",
+  publisher: "OLEGE",
   openGraph: {
-    title: "Contact MARQUES VAZ PLACO - Devis Gratuit Plaquiste PACA",
-    description: "Contactez notre expert plaquiste pour votre projet. Devis gratuit et personnalisé en Provence-Alpes-Côte d'Azur.",
+    title: "Contact OLEGE - Devis Gratuit Entrepreneur Bâtiment Île-de-France",
+    description: "Contactez notre entrepreneur du bâtiment pour votre projet. Devis gratuit et personnalisé en Île-de-France.",
     type: "website",
     locale: "fr_FR",
-    siteName: "MARQUES VAZ PLACO - Plaquiste Professionnel",
+    siteName: "OLEGE - Entrepreneur du bâtiment",
   },
   twitter: {
     card: "summary",
-    title: "Contact MARQUES VAZ PLACO - Devis Gratuit",
-    description: "Contactez notre expert plaquiste pour votre projet en PACA.",
+    title: "Contact OLEGE - Devis Gratuit",
+    description: "Contactez notre entrepreneur du bâtiment pour votre projet en Île-de-France.",
   },
   robots: {
     index: true,

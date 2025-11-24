@@ -22,48 +22,36 @@ export default function HomeClient() {
   
   const servicesData = [
     {
-      title: "Cloisons Sèches",
-      subtitle: "Aménagement et séparation d'espaces",
-      content: "Pose de cloisons sèches en plaques de plâtre pour créer, séparer ou réorganiser vos espaces intérieurs. Solutions sur mesure avec isolation phonique et thermique.",
+      title: "Électricité",
+      subtitle: "Installation et rénovation électrique",
+      content: "Installation complète et rénovation de systèmes électriques. Mise aux normes, tableaux électriques, éclairage et prises. Intervention sécurisée et conforme aux normes.",
       image: "/placo.png",
       gradientFrom: "#ff7e5f",
-      gradientTo: "#feb47b",
-      href: "/services/cloisons-seches"
+      gradientTo: "#feb47b"
     },
     {
-      title: "Doublages",
-      subtitle: "Isolation et finition murale",
-      content: "Doublage des murs pour améliorer l'isolation thermique et phonique. Pose de plaques de plâtre sur ossature métallique ou collage direct selon vos besoins.",
+      title: "Peinture",
+      subtitle: "Peinture intérieure et extérieure",
+      content: "Travaux de peinture pour intérieur et extérieur. Préparation des surfaces, enduits, peinture décorative et finitions. Conseils couleurs et matériaux.",
       image: "/plomberie.png",
       gradientFrom: "#667eea",
-      gradientTo: "#764ba2",
-      href: "/services/doublages"
+      gradientTo: "#764ba2"
     },
     {
-      title: "Faux Plafonds",
-      subtitle: "Plafonds suspendus modernes",
-      content: "Installation de faux plafonds suspendus en plaques de plâtre. Intégration d'éclairage, amélioration de l'isolation et création de volumes sur mesure.",
+      title: "Plâtrerie",
+      subtitle: "Cloisons et finitions plâtre",
+      content: "Pose de cloisons sèches, doublages, faux plafonds et finitions plâtrerie. Création et aménagement d'espaces avec isolation thermique et phonique.",
       image: "/maison-work.png",
       gradientFrom: "#28a745",
-      gradientTo: "#20c997",
-      href: "/services/faux-plafonds"
-    },
-    {
-      title: "Finitions Plâtrerie",
-      subtitle: "Finitions et enduits",
-      content: "Réalisation de finitions parfaites : enduits, lissage, ponçage. Préparation des surfaces pour peinture ou revêtements avec un rendu professionnel.",
-      image: "/mur.png",
-      gradientFrom: "#fd7e14",
-      gradientTo: "#ffc107",
-      href: "/services/finitions-platrerie"
+      gradientTo: "#20c997"
     }
   ];
 
   const contactInfo = {
-    address: "Provence-Alpes-Côte d'Azur\nMarseille et environs\nRayon d'intervention : 80 km",
-    phone: "06 59 76 49 95",
-    email: "amiltonvazmarques@gmail.com",
-    mapEmbedUrl: "https://maps.google.com/maps?q=Marseille,France&t=&z=12&ie=UTF8&iwloc=&output=embed"
+    address: "Île-de-France\nIntervention dans toute la région\nRayon d'intervention : 100 km",
+    phone: "06 05 59 88 97",
+    email: "contact@olege.fr",
+    mapEmbedUrl: "https://maps.google.com/maps?q=Ile-de-France,France&t=&z=10&ie=UTF8&iwloc=&output=embed"
   };
 
   return (
@@ -114,7 +102,7 @@ export default function HomeClient() {
       <TeamSection config={config.team} />
       <ContactSection 
         title="Contactez-nous"
-        subtitle="Parlons de votre projet de plâtrerie, cloisons sèches, doublages ou faux plafonds en Provence-Alpes-Côte d'Azur"
+        subtitle="Parlons de votre projet d'électricité, peinture ou plâtrerie en Île-de-France"
         contactInfo={contactInfo} 
       />
 
